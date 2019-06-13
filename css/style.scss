@@ -1,0 +1,196 @@
+/* COLORS TO BE USED */
+$pale-white: #fafafa;
+$steel-blue: rgb(27, 120, 196);
+$steel-blue-hover: darken($steel-blue, 10%);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  //border: 1px solid red;
+}
+body {
+  background: $pale-white;
+  font-family: monospace;
+}
+header {
+  max-width: 100%;
+  height: 500px;
+  background: linear-gradient(
+      to top,
+      rgba(31, 30, 30, 0.8),
+      rgba(22, 22, 24, 0.8)
+    ),
+    url(../images/background.jpg);
+  background-position: top;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 0 100%);
+  .heading-text {
+    color: $pale-white;
+    text-align: center;
+    display: block;
+    margin: 4% auto;
+    font-size: 16px;
+    .primary-heading-text {
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      font-weight: 400;
+    }
+    .secondary-heading-text {
+      text-transform: uppercase;
+      letter-spacing: 8px;
+      font-weight: 400;
+      padding: 2em;
+    }
+    .social-links {
+      word-spacing: 20px;
+      a {
+        color: white;
+      }
+      span:hover {
+        color: wheat;
+        font-size: 1.5em;
+      }
+    }
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 2em;
+    word-spacing: 30px;
+    text-align: center;
+    font-size: 0.6rem;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 4px;
+    &:hover {
+      border-bottom: 2px solid white;
+      font-weight: bold;
+    }
+  }
+}
+.about {
+  h1 {
+    color: $steel-blue;
+  }
+  h3 {
+    color: rgb(132, 129, 129);
+  }
+  h1,
+  h3 {
+    text-align: center;
+    margin: 20px;
+  }
+  padding: 50px;
+  .about-img {
+    width: 40em;
+    #kelvin-img {
+      max-width: 100%;
+      height: 500px;
+    }
+  }
+  .about-text {
+    p {
+      padding: 10px;
+      margin: 5px;
+      font-weight: bold;
+    }
+    .progress-group {
+      padding: 10px;
+      width: 100%;
+      margin: 5px;
+      label {
+        display: block;
+        padding: 5px;
+        font-weight: bold;
+      }
+      progress {
+        display: block;
+        width: 100%;
+      }
+    }
+    .btn-resume {
+      padding: 15px;
+      margin: 5px;
+      background: $steel-blue;
+      border: none;
+      position: relative;
+      top: 0;
+      left: 10px;
+      & a {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+      }
+      &:hover {
+        background: $steel-blue-hover;
+      }
+    }
+  }
+  .make-flex {
+    display: flex;
+  }
+}
+.project-div {
+  padding: 10em;
+  background: rgb(27, 120, 196);
+  width: 100%;
+  height: 500px;
+  clip-path: polygon(0 calc(100% - 400px), 100% 0, 100% 500px, 0 100%);
+  h1 {
+    text-align: center;
+    color: white;
+  }
+}
+@media (max-width: 768px) {
+  .heading-text{
+    padding: 10vw;
+  }
+  .about {
+    padding: 50px;
+    .about-img {
+      width: 20em;
+      margin: 0 auto;
+      padding: 10px;
+      #kelvin-img {
+        max-width: 100%;
+        text-align: center;
+        height: auto;
+      }
+    }
+    .about-text {
+      padding: 10px;
+      p {
+        text-align: center;
+      }
+    }
+    h1,
+    h4 {
+      text-align: center;
+    }
+    h1 {
+      color: rgba(141, 148, 141, 0.797);
+      padding: 5px;
+    }
+    .progress-group {
+      padding: 10px;
+      width: 100%;
+      margin: 5px;
+      label {
+        display: block;
+        padding: 5px;
+        font-weight: bold;
+      }
+      progress {
+        display: block;
+        width: 100%;
+      }
+    }
+    .make-flex {
+      display: block;
+    }
+  }
+}
