@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
+
+$bg-color: #f6f9fe;
+$pink: #fe52c0;
+$footer-bg: #00262e;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+}
+body {
+  background: $bg-color;
+  font-family: Rubik;
+  overflow-x: hidden;
+}
+.clip-art {
+  width: 100vw;
+  height: 100vw;
+  border-radius: 10vw;
+  transform: rotate(45deg);
+  background: linear-gradient(to top right, $pink, purple);
+  position: absolute;
+  left: 50vw;
+  top: -50vw;
+  z-index: -3;
+}
+#logo {
+  max-width: 100%;
+  height: auto;
+}
+header,
+main {
+  padding: 2em;
+}
+.brand-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  #logo {
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+  #brand-btn {
+    padding: 0.6em 2.5em;
+    background: white;
+    font-size: 14px;
+    border: none;
+    transform: scale(0.9);
+    border-radius: 400px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    &:hover {
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    }
+    a {
+      color: $pink;
+      text-decoration: none;
+    }
+  }
+}
+.illustration-wrapper {
+  width: 90%;
+  margin: 12% auto;
+  text-align: center;
+  img {
+    max-width: 100%;
+  }
+  h1,
+  p,
+  button {
+    padding: 12px;
+  }
+
+  h1 {
+    margin-top: 1.3em;
+  }
+  p {
+    color: grey;
+    display: table;
+    width: 40%;
+    margin: 10px auto;
+  }
+  .illustration-btn {
+    background: $pink;
+    border-radius: 5px;
+    font-size: 14px;
+    text-transform: initial;
+    padding: 1.5em 3em;
+    margin: 4em auto;
+    border: none !important;
+    transition: 0.3s ease-in all;
+    transform: scale(0.9);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    &:hover {
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+main {
+  article {
+    display: flex;
+    .side-one {
+      padding: 2em;
+      align-self: center;
+    }
+    img {
+      max-width: 100%;
+    }
+    .side-two {
+      text-align: justify;
+      padding: 5em;
+      .users-text {
+        line-height: 1.3em;
+        padding: 1em;
+        p {
+          color: grey;
+        }
+      }
+    }
+  }
+  .try-it-card {
+    font-size: 1em;
+    width: 80vw;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    background: white;
+    padding: 5em;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    p {
+      color: grey;
+      line-height: 3em;
+    }
+    .illustration-btn {
+      background: $pink;
+      font-size: 14px;
+      border: none;
+      border-radius: 5px;
+      transform: scale(0.9);
+      padding: 1.5em 3em;
+      margin: 1em auto;
+      transition: .3s ease-in all;
+      box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+      &:hover {
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 5em;
+  padding: 4em;
+  width: 100%;
+  background: $footer-bg;
+  height: auto;
+  color: white;
+  font-size: 14px;
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em;
+    .col {
+      padding: 2em;
+      width: 25%;
+      .social-icon {
+        font-size: 30px;
+        padding: 0.5em;
+      }
+    }
+    .col-two,
+    .col-three {
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          list-style-type: none;
+          line-height: 2em;
+          a {
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .col-four {
+      p {
+        font-size: 14px;
+        display: table;
+      }
+      form {
+        input {
+          padding: 10px;
+          border-radius: 2px;
+          border: none;
+          width: 90%;
+        }
+        input[type="submit"] {
+          background: $pink;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .illustration-wrapper {
+    p {
+      width: 95%;
+    }
+  }
+  .brand-wrapper {
+    .brand-img {
+      width: 100px;
+      display: grid;
+      place-content: center;
+    }
+    #logo {
+      max-width: 100%;
+      height: auto;
+    }
+    #brand-btn {
+      width: 10em;
+    }
+  }
+  main {
+    article {
+      display: block;
+      .side-one {
+        padding: 2em;
+      }
+      img {
+        max-width: 100%;
+      }
+      .side-two {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1em;
+        .users-text {
+          padding: 1em;
+          p {
+            color: grey;
+          }
+        }
+      }
+    }
+    .try-it-card {
+      width: 100%;
+      height: auto;
+      text-align: center;
+      margin: auto;
+      background: white;
+      padding: 2em;
+      p {
+        font-size: 12px;
+        color: grey;
+      }
+      .illustration-btn {
+        background: $pink;
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  footer {
+    margin-top: 5em;
+    padding: 2em;
+    width: 100%;
+    background: $footer-bg;
+    height: auto;
+    color: white;
+    font-size: 14px;
+    .footer-row {
+      display: flex;
+      flex-direction: column;
+      .col {
+        align-self: center;
+        padding: 1em;
+        width: 80%;
+      }
+      .col-one {
+        text-align: center;
+        padding: 2em;
+      }
+    }
+    .col-two,
+    .col-three {
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          list-style-type: none;
+          line-height: 2em;
+          a {
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .col-four {
+      text-align: center;
+      p {
+        font-size: 10px;
+      }
+      form {
+        input {
+          padding: 10px;
+          border-radius: 2px;
+          border: none;
+          width: 90%;
+        }
+        input[type="submit"] {
+          background: $pink;
+          color: white;
+        }
+      }
+    }
+  }
+}
