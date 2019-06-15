@@ -43,9 +43,15 @@ header {
 
       .btn-green {
         background: $strong-cyan;
+        &:hover {
+          box-shadow: 1px 2px 2px $strong-cyan;
+        }
       }
       .btn-purple {
         background: $light-blue;
+        &:hover {
+          box-shadow: 1px 2px 2px $light-blue;
+        }
       }
       .btn {
         margin-left: 1em;
@@ -281,6 +287,14 @@ footer {
           }
         }
       }
+      .col-6 {
+        .social-icons {
+          span {
+            margin-left: 1em;
+            font-size: 24px;
+          }
+        }
+      }
     }
   }
   .attribution {
@@ -483,9 +497,15 @@ footer {
           flex-direction: column;
           .btn-green {
             background: $strong-cyan;
+            &:hover {
+              box-shadow: 1px 2px 2px $strong-cyan;
+            }
           }
           .btn-purple {
             background: $light-blue;
+            &:hover {
+              box-shadow: 1px 2px 2px $light-blue;
+            }
           }
           .btn {
             margin-top: 1em;

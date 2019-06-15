@@ -43,8 +43,18 @@ header .header-wrapper .button-wrapper .btn-green {
   background: #26baa4;
 }
 
+header .header-wrapper .button-wrapper .btn-green:hover {
+  -webkit-box-shadow: 1px 2px 2px #26baa4;
+          box-shadow: 1px 2px 2px #26baa4;
+}
+
 header .header-wrapper .button-wrapper .btn-purple {
   background: #6173ff;
+}
+
+header .header-wrapper .button-wrapper .btn-purple:hover {
+  -webkit-box-shadow: 1px 2px 2px #6173ff;
+          box-shadow: 1px 2px 2px #6173ff;
 }
 
 header .header-wrapper .button-wrapper .btn {
@@ -327,6 +337,11 @@ footer .footer-wrapper .row .col-4 ul li a {
   font-size: 14px;
 }
 
+footer .footer-wrapper .row .col-6 .social-icons span {
+  margin-left: 1em;
+  font-size: 24px;
+}
+
 footer .attribution {
   text-align: center;
   padding: 1em;
@@ -558,8 +573,16 @@ footer .attribution a {
   main .section-five .text-wrapper .button-wrapper .btn-green {
     background: #26baa4;
   }
+  main .section-five .text-wrapper .button-wrapper .btn-green:hover {
+    -webkit-box-shadow: 1px 2px 2px #26baa4;
+            box-shadow: 1px 2px 2px #26baa4;
+  }
   main .section-five .text-wrapper .button-wrapper .btn-purple {
     background: #6173ff;
+  }
+  main .section-five .text-wrapper .button-wrapper .btn-purple:hover {
+    -webkit-box-shadow: 1px 2px 2px #6173ff;
+            box-shadow: 1px 2px 2px #6173ff;
   }
   main .section-five .text-wrapper .button-wrapper .btn {
     margin-top: 1em;
