@@ -289,11 +289,14 @@ footer {
       }
       .col-6 {
         .social-icons {
+          a {
+            color: $dark-grayish-blue;
           span {
             margin-left: 1em;
             font-size: 24px;
           }
         }
+      }
       }
     }
   }
