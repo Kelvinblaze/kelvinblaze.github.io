@@ -81,9 +81,6 @@ header {
             max-width: 200px;
             width: 100%;
             height: auto;
-            &:hover {
-              box-shadow: 1px 1px 5px grey;
-            }
           }
         }
       }
@@ -109,7 +106,9 @@ main {
   section {
     padding: 2em;
   }
-  .first-section {
+  .first-section,
+  .second-section,
+  .third-section {
     .row {
       width: 100%;
       display: flex;
@@ -144,6 +143,48 @@ main {
             max-width: 300px;
             width: 100% !important;
             height: auto;
+          }
+        }
+      }
+    }
+  }
+  .first-section,
+  .second-section,
+  .third-section {
+    border-top: 2px solid $main-color;
+  }
+  .third-section {
+    background: $bg-main;
+  }
+}
+
+footer {
+  background: $main-color;
+  padding: 4em;
+  .footer-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      display: block;
+    }
+    .link-wrapper {
+      width: 20%;
+      padding: 1em;
+      @media (max-width: 768px) {
+        width: 100%;
+        text-align: center;
+      }
+      span {
+        color: white;
+        padding: 0 1em;
+      }
+      ul {
+        li {
+          list-style-type: none;
+          a {
+            color: white;
+            text-decoration: none;
           }
         }
       }
