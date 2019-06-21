@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Open Sans;
+}
+
+header {
+  background: #f9f9f9;
+  padding: 2em;
+  width: 100%;
+}
+
+header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .navbar .brand img {
+  max-width: 100%;
+  height: auto;
+}
+
+header .navbar nav {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+header .navbar nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+header .navbar nav ul li a {
+  color: #333333;
+  text-decoration: none;
+  padding: 1em;
+}
+
+header .navbar nav ul li a:hover {
+  font-weight: bolder;
+}
+
+header .header-intro-wrapper {
+  margin-top: 4em;
+}
+
+header .header-intro-wrapper .row {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  header .header-intro-wrapper .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+header .header-intro-wrapper .row .col {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  header .header-intro-wrapper .row .col {
+    width: 100%;
+  }
+}
+
+header .header-intro-wrapper .row .col-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: center;
+}
+
+header .header-intro-wrapper .row .col-1 h1,
+header .header-intro-wrapper .row .col-1 h3,
+header .header-intro-wrapper .row .col-1 .download-btn {
+  margin-top: 2em;
+}
+
+header .header-intro-wrapper .row .col-1 h1 {
+  font-size: 72px;
+}
+
+header .header-intro-wrapper .row .col-1 h3 {
+  margin: 0 auto;
+  font-weight: 200;
+  max-width: 80%;
+}
+
+header .header-intro-wrapper .row .col-1 .download-btn img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+header .header-intro-wrapper .row .col-1 .download-btn img:hover {
+  -webkit-box-shadow: 1px 1px 5px grey;
+          box-shadow: 1px 1px 5px grey;
+}
+
+header .header-intro-wrapper .row .col-2 {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+@media (max-width: 768px) {
+  header .header-intro-wrapper .row .col-2 .app-img {
+    height: 35vh;
+  }
+}
+
+header .header-intro-wrapper .row .col-2 .app-img img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  header .header-intro-wrapper .row .col-2 .app-img img {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+            clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  }
+}
+
+main section {
+  padding: 2em;
+}
+
+main .first-section .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  main .first-section .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main .first-section .row .col {
+  width: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+@media (max-width: 768px) {
+  main .first-section .row .col {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+main .first-section .row .col .col-text {
+  max-width: 400px;
+}
+
+main .first-section .row .col .col-text h2,
+main .first-section .row .col .col-text p {
+  margin-top: 1em;
+}
+
+main .first-section .row .col .col-text h2 {
+  color: #8bc34a;
+}
+
+main .first-section .row .col .col-text p {
+  font-weight: 200;
+}
+
+main .first-section .row .col .section-img {
+  padding-right: 4vw;
+  margin-top: 2em;
+}
+
+main .first-section .row .col .section-img img {
+  max-width: 300px;
+  width: 100% !important;
+  height: auto;
+}
+/*# sourceMappingURL=style.css.map */
