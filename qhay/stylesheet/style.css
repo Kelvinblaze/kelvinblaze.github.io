@@ -111,8 +111,9 @@ header .header-intro-wrapper .row .col-1 h1 {
 
 header .header-intro-wrapper .row .col-1 h3 {
   margin: 0 auto;
-  font-weight: 200;
+  font-weight: 300;
   max-width: 80%;
+  line-height: 1.6em;
 }
 
 header .header-intro-wrapper .row .col-1 .download-btn img {
@@ -210,7 +211,8 @@ main .third-section .row .col .col-text h2 {
 main .first-section .row .col .col-text p,
 main .second-section .row .col .col-text p,
 main .third-section .row .col .col-text p {
-  font-weight: 200;
+  font-weight: 300;
+  line-height: 1.5em;
 }
 
 main .first-section .row .col .section-img,
@@ -241,6 +243,8 @@ main .third-section {
 footer {
   background: #8bc34a;
   padding: 4em;
+  font-family: Open Sans;
+  font-weight: 300;
 }
 
 footer .footer-links {
