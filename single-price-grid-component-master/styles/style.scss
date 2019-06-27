@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+// colors used
+$grayish-blue: hsl(218, 22%, 67%);
+$light-grey: hsl(204, 43%, 93%);
+$cyan: hsl(179, 62%, 43%);
+$Bright-yellow: hsl(71, 73%, 54%);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  //border: 1px solid red;
+}
+body {
+  background: $light-grey;
+  font-family: Karla;
+  font-size: 16px;
+}
+main {
+  margin: 10% auto;
+  width: 70%;
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    @media (max-width: 768px) {
+      grid-template-columns: auto;
+      grid-template-rows: repeat(3, 1fr);
+    }
+    .grid-item {
+      padding: 2em;
+      display: grid;
+    }
+  }
+  .grid-one {
+    background: #fafafa;
+    border-radius: 8px 8px 0 0;
+    grid-column: 1/3;
+    @media (max-width: 768px) {
+      grid-column: 1/1;
+    }
+    h2,
+    p {
+      margin-top: 1em;
+    }
+    h2 {
+      color: #4abebd;
+    }
+    #sub-head {
+      color: $Bright-yellow !important;
+      font-weight: bolder;
+    }
+    p {
+      color: $grayish-blue;
+      line-height: 1.5em;
+    }
+  }
+  .grid-two {
+    background: $cyan;
+    border-radius: 0 0 0 8px;
+    @media (max-width: 768px) {
+      border-radius: 0;
+    }
+    p,
+    a {
+      margin-top: 0.8em;
+    }
+    h2 {
+      color: #fafafa;
+    }
+    p {
+      color: $light-grey;
+
+      span {
+        color: #fafafa;
+        font-weight: 700;
+        font-size: 2em;
+      }
+    }
+    p:nth-child(odd) {
+      color: #fafafa;
+    }
+    .sign-btn {
+      background: $Bright-yellow;
+      border-radius: 5px;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      font-weight: bolder;
+      display: grid;
+      place-content: center;
+      &:hover {
+          box-shadow:0px 0px 4px $Bright-yellow;
+      }
+    }
+  }
+  .grid-three {
+    background: #4abebd;
+    border-radius: 0 0 8px 0;
+    @media (max-width: 768px) {
+      border-radius: 0 0 8px 8px;
+    }
+
+    h2 {
+      color: #fafafa;
+    }
+    ul {
+      margin-top: 1em;
+      li {
+        list-style: none;
+        margin-top: 0.2em;
+        color: $light-grey;
+      }
+    }
+  }
+}
+footer {
+    padding: 1em;
+    .attribution {
+        a {
+            color: $cyan;
+            text-decoration: none;
+            &:hover {
+                font-weight: bolder;
+            }
+        }
+    }
+}

@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #e5eff5;
+  font-family: Karla;
+  font-size: 16px;
+}
+
+main {
+  margin: 10% auto;
+  width: 70%;
+}
+
+main .grid-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+@media (max-width: 768px) {
+  main .grid-wrapper {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+main .grid-wrapper .grid-item {
+  padding: 2em;
+  display: -ms-grid;
+  display: grid;
+}
+
+main .grid-one {
+  background: #fafafa;
+  border-radius: 8px 8px 0 0;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+@media (max-width: 768px) {
+  main .grid-one {
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+  }
+}
+
+main .grid-one h2,
+main .grid-one p {
+  margin-top: 1em;
+}
+
+main .grid-one h2 {
+  color: #4abebd;
+}
+
+main .grid-one #sub-head {
+  color: #c0df34 !important;
+  font-weight: bolder;
+}
+
+main .grid-one p {
+  color: #98a6bd;
+  line-height: 1.5em;
+}
+
+main .grid-two {
+  background: #2ab2af;
+  border-radius: 0 0 0 8px;
+}
+
+@media (max-width: 768px) {
+  main .grid-two {
+    border-radius: 0;
+  }
+}
+
+main .grid-two p,
+main .grid-two a {
+  margin-top: 0.8em;
+}
+
+main .grid-two h2 {
+  color: #fafafa;
+}
+
+main .grid-two p {
+  color: #e5eff5;
+}
+
+main .grid-two p span {
+  color: #fafafa;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+main .grid-two p:nth-child(odd) {
+  color: #fafafa;
+}
+
+main .grid-two .sign-btn {
+  background: #c0df34;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+main .grid-two .sign-btn:hover {
+  -webkit-box-shadow: 0px 0px 4px #c0df34;
+          box-shadow: 0px 0px 4px #c0df34;
+}
+
+main .grid-three {
+  background: #4abebd;
+  border-radius: 0 0 8px 0;
+}
+
+@media (max-width: 768px) {
+  main .grid-three {
+    border-radius: 0 0 8px 8px;
+  }
+}
+
+main .grid-three h2 {
+  color: #fafafa;
+}
+
+main .grid-three ul {
+  margin-top: 1em;
+}
+
+main .grid-three ul li {
+  list-style: none;
+  margin-top: 0.2em;
+  color: #e5eff5;
+}
+
+footer {
+  padding: 1em;
+}
+
+footer .attribution a {
+  color: #2ab2af;
+  text-decoration: none;
+}
+
+footer .attribution a:hover {
+  font-weight: bolder;
+}
+/*# sourceMappingURL=style.css.map */
