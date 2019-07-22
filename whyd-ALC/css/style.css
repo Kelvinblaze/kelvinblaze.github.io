@@ -247,4 +247,13 @@ main .section-two .section-content {
 main .section-two .section-content p {
   margin: 1em 0;
 }
+
+main .section-two .section-img {
+  width: 100%;
+  margin: auto;
+}
+
+main .section-two .section-img #subwoofer {
+  max-width: 100%;
+}
 /*# sourceMappingURL=style.css.map */

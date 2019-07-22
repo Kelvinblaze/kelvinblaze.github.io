@@ -165,7 +165,7 @@ main {
 
   .section-two {
     padding: 4em 8em;
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
       padding: 4em 4em;
     }
     .section-head {
@@ -186,11 +186,18 @@ main {
       font-weight: 300;
       margin: 3em 0;
       column-count: 2;
-      @media (max-width: 768px){
+      @media (max-width: 768px) {
         column-count: 1;
       }
-      p{
+      p {
         margin: 1em 0;
+      }
+    }
+    .section-img {
+      width: 100%;
+      margin: auto;
+      #subwoofer {
+        max-width: 100%;
       }
     }
   }
