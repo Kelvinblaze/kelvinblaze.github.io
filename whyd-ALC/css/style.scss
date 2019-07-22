@@ -34,6 +34,9 @@ header {
         color: $black;
         float: right;
         display: none;
+        @media (max-width: 768px) {
+          display: block;
+        }
       }
       ul {
         @media (max-width: 768px) {
@@ -154,6 +157,40 @@ main {
             url("../images/speaker-3.jpg");
           background-size: cover;
         }
+      }
+    }
+  }
+
+  //section two
+
+  .section-two {
+    padding: 4em 8em;
+    @media (max-width: 768px){
+      padding: 4em 4em;
+    }
+    .section-head {
+      .intro-cover {
+        background: $black;
+        color: #ffffff;
+        padding: 1em 1em;
+        border-radius: 2px;
+        width: 200px;
+        text-align: center;
+      }
+      h2 {
+        font-weight: 300;
+        margin: 0.5em 0;
+      }
+    }
+    .section-content {
+      font-weight: 300;
+      margin: 3em 0;
+      column-count: 2;
+      @media (max-width: 768px){
+        column-count: 1;
+      }
+      p{
+        margin: 1em 0;
       }
     }
   }

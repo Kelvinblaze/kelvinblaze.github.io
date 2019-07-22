@@ -41,6 +41,12 @@ header .navbar nav .toggle-btn {
   display: none;
 }
 
+@media (max-width: 768px) {
+  header .navbar nav .toggle-btn {
+    display: block;
+  }
+}
+
 header .navbar nav ul {
   list-style: none;
 }
@@ -198,5 +204,47 @@ main .section-one .row .col .speaker-3 {
   background: -webkit-gradient(linear, left top, right top, from(rgba(122, 122, 124, 0.7))), url("../images/speaker-3.jpg");
   background: linear-gradient(to right, rgba(122, 122, 124, 0.7)), url("../images/speaker-3.jpg");
   background-size: cover;
+}
+
+main .section-two {
+  padding: 4em 8em;
+}
+
+@media (max-width: 768px) {
+  main .section-two {
+    padding: 4em 4em;
+  }
+}
+
+main .section-two .section-head .intro-cover {
+  background: #000000;
+  color: #ffffff;
+  padding: 1em 1em;
+  border-radius: 2px;
+  width: 200px;
+  text-align: center;
+}
+
+main .section-two .section-head h2 {
+  font-weight: 300;
+  margin: 0.5em 0;
+}
+
+main .section-two .section-content {
+  font-weight: 300;
+  margin: 3em 0;
+  -webkit-column-count: 2;
+          column-count: 2;
+}
+
+@media (max-width: 768px) {
+  main .section-two .section-content {
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
+}
+
+main .section-two .section-content p {
+  margin: 1em 0;
 }
 /*# sourceMappingURL=style.css.map */
