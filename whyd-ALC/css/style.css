@@ -244,7 +244,10 @@ main .section-two .section-content {
             column-count: 1;
   }
 }
-
+main .section-two .section-content .p-content p {
+    margin-top: 1em;
+font-size: 12px;
+  }
 @media (max-width: 768px) {
   main .section-two .section-content .p-content p {
     margin-top: 1em;
