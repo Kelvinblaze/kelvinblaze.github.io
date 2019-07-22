@@ -244,18 +244,11 @@ main .section-two .section-content {
             column-count: 1;
   }
 }
-<<<<<<< HEAD
 
 main .section-two .section-content .p-content p {
   font-size: 14px;
 }
 
-=======
-main .section-two .section-content .p-content p {
-    margin-top: 1em;
-font-size: 12px;
-  }
->>>>>>> 8a946710da9e9cef5742da6161d5960512f0fd24
 @media (max-width: 768px) {
   main .section-two .section-content .p-content p {
     margin-top: 1em;
@@ -270,7 +263,6 @@ main .section-two .section-img {
 main .section-two .section-img #subwoofer {
   max-width: 100%;
 }
-<<<<<<< HEAD
 
 main .section-two .section-img h2 {
   font-weight: 300;
@@ -358,7 +350,7 @@ main .section-three .row .col .section-text-wrapper h2 {
 }
 
 main .section-three .row .col .section-text-wrapper .p-text {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
 }
 
@@ -416,6 +408,3 @@ footer .footer-nav ul li a:hover {
   font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
-=======
-/*# sourceMappingURL=style.css.map */
->>>>>>> 8a946710da9e9cef5742da6161d5960512f0fd24
