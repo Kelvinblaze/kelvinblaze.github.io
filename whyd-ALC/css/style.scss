@@ -39,8 +39,9 @@ header {
         }
       }
       ul {
+        display: block;
         @media (max-width: 768px) {
-          display: block;
+          display: none;
         }
         list-style: none;
         li {
@@ -189,8 +190,12 @@ main {
       @media (max-width: 768px) {
         column-count: 1;
       }
-      p {
-        margin: 1em 0;
+      .p-content {
+        p {
+          @media (max-width: 768px) {
+            margin-top: 1em;
+          }
+        }
       }
     }
     .section-img {

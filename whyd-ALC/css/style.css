@@ -48,12 +48,13 @@ header .navbar nav .toggle-btn {
 }
 
 header .navbar nav ul {
+  display: block;
   list-style: none;
 }
 
 @media (max-width: 768px) {
   header .navbar nav ul {
-    display: block;
+    display: none;
   }
 }
 
@@ -244,8 +245,10 @@ main .section-two .section-content {
   }
 }
 
-main .section-two .section-content p {
-  margin: 1em 0;
+@media (max-width: 768px) {
+  main .section-two .section-content .p-content p {
+    margin-top: 1em;
+  }
 }
 
 main .section-two .section-img {

@@ -11,6 +11,8 @@
     <!-- Font-Awesome CDN -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Jquery for toggle -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -103,22 +105,31 @@
             </div>
 
             <div class="section-content">
-                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni accusantium laudantium, quasi totam
-                    voluptatum nulla sunt illum tempore voluptatem, dolorum quia ullam libero similique ipsam maxime
-                    pariatur est cum beatae?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, saepe animi! Corporis veritatis
-                    voluptate asperiores dolores iusto officia reiciendis provident.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, voluptatum sequi. Incidunt
-                    enim aliquid, quia alias dolor impedit iure magni provident illo quae, iste consequuntur
-                    necessitatibus itaque quos nulla blanditiis!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nisi impedit labore atque, totam
-                    corrupti nemo fuga culpa laborum quasi ipsam iste optio sequi at ipsum dicta. Consequatur, nam.
-                    Sunt!</p>
+                <div class="p-content">
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni accusantium laudantium, quasi
+                        totam
+                        voluptatum nulla sunt illum tempore voluptatem, dolorum quia ullam libero similique ipsam maxime
+                        pariatur est cum beatae?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, saepe animi! Corporis veritatis
+                        voluptate asperiores dolores iusto officia reiciendis provident.</p>
+                </div>
+                <div class="p-content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, voluptatum sequi.
+                        Incidunt
+                        enim aliquid, quia alias dolor impedit iure magni provident illo quae, iste consequuntur
+                        necessitatibus itaque quos nulla blanditiis!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nisi impedit labore atque,
+                        totam
+                        corrupti nemo fuga culpa laborum quasi ipsam iste optio sequi at ipsum dicta. Consequatur, nam.
+                        Sunt!</p>
+                </div>
+
+
             </div>
             <div class="section-img">
                 <img src="images/subwoofer.png" alt="subwoofer" id="subwoofer">
             </div>
-            
+
 
         </section>
     </main>
@@ -129,6 +140,12 @@
 
     </footer>
     <!-- footer Ends here -->
+
+    <script>
+        $(".toggle-btn").click(function () {
+            $("ul").toggle();
+        });
+    </script>
 </body>
 
 </html>
