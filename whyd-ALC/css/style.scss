@@ -30,14 +30,23 @@ header {
       }
     }
     nav {
-      
+      .toggle-btn {
+        color: $black;
+        float: right;
+        display: none;
+      }
       ul {
         @media (max-width: 768px) {
-          display: none;
+          display: block;
         }
         list-style: none;
         li {
           display: inline-block;
+          @media (max-width: 768px) {
+            display: block;
+            margin-top: 0.5em;
+            padding: 0.5em;
+          }
           a {
             text-decoration: none;
             color: $black;

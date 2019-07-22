@@ -35,18 +35,32 @@ header .navbar .brand a {
   font-weight: 600;
 }
 
+header .navbar nav .toggle-btn {
+  color: #000000;
+  float: right;
+  display: none;
+}
+
 header .navbar nav ul {
   list-style: none;
 }
 
 @media (max-width: 768px) {
   header .navbar nav ul {
-    display: none;
+    display: block;
   }
 }
 
 header .navbar nav ul li {
   display: inline-block;
+}
+
+@media (max-width: 768px) {
+  header .navbar nav ul li {
+    display: block;
+    margin-top: 0.5em;
+    padding: 0.5em;
+  }
 }
 
 header .navbar nav ul li a {
