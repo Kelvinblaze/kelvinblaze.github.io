@@ -284,6 +284,18 @@ main .section-three {
   }
 }
 
+@media (max-width: 768px) {
+  main .section-three .row-two {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+}
+
 main .section-three .row {
   width: 100%;
   display: -webkit-box;

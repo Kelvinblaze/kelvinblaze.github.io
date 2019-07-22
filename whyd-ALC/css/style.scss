@@ -223,6 +223,12 @@ main {
     @media (max-width: 768px) {
       padding: 4em 4em;
     }
+    .row-two {
+      @media (max-width: 768px){
+        display: flex !important;
+        flex-direction: column !important;
+      }
+    }
     .row {
       width: 100%;
       display: flex;
