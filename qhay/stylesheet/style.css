@@ -240,6 +240,12 @@ main .third-section {
   background: #f9f9f9;
 }
 
+main .third-section .download-btn img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
 footer {
   background: #8bc34a;
   padding: 4em;
