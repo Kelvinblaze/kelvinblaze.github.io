@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="stylesheet/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Frontend Mentor | Project tracking intro component</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="brand">
+      <img src="images/logo.svg" alt="Logo">
+    </div>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li class="navbar__grey">•</li>
+        <li><a href="#" class="navbar__grey">Login</a></li>
+      </ul>
+      <span class="fa fa-bars toggle-btn" id="toggleBtn"></span>
+    </nav>
+  </header>
+
+  <!-- Mobile navigation -->
+  <div class="nav-mobile" id="navMobile">
+    <ul>
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li>
+        <hr class="navbar__grey-divider">
+      </li>
+      <li><a href="#" class="navbar__grey">Login</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <div class="container">
+
+      <!-- Section One -->
+      <section class="section-one">
+        <div class="wrapper">
+          <div class="section-one__title">
+            <h3><span class="section-one__title--inverted">New</span> Monograph Dashboard</h3>
+          </div>
+          <div class="section-one__intro-text">
+            <h1>Powerful insights into your team</h1>
+            <p>Project planning and time tracking for agile teams</p>
+          </div>
+          <div class="section-one__btn-wrapper">
+            <a href="#" class="btn">Schedule a demo</a>
+            <a href="#" class="spaced">to see a live preview</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section two -->
+      <section class="section-two">
+        <div class="section-two__illustration-wrapper">
+          <img src="images/illustration-devices.svg" alt="illustration-devices" class="illustration">
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://instagram.com/__kelvinblaze">Ifeanyi Kelvin Ossai</a>.
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

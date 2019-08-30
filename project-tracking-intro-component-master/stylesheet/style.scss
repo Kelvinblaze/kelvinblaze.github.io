@@ -1,0 +1,210 @@
+$Light-Grayish-Blue: hsl(207, 33%, 95%);
+$Very-Dark-Blue: hsl(230, 29%, 20%);
+$Dark-Grayish-Blue: hsl(230, 11%, 40%);
+$Grayish-Blue: hsl(231, 7%, 65%);
+$Red: hsl(0, 100%, 68%);
+
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Barlow&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // border: 1px solid red;
+}
+body {
+  font-size: 18px;
+  background: #fafafa;
+  font-family: Barlow;
+}
+
+header {
+  display: flex;
+  padding: 2em;
+  justify-content: space-around;
+  @media (max-width: 768px) {
+    justify-content: space-between;
+  }
+  nav {
+    display: grid;
+    place-content: center;
+    .toggle-btn {
+      display: none;
+      cursor: pointer;
+      @media (max-width: 768px) {
+        display: block;
+      }
+    }
+    // Desktop Navigation
+    ul {
+      list-style-type: none;
+      @media (max-width: 768px) {
+        display: none;
+      }
+      li {
+        display: inline-block;
+        a {
+          text-decoration: none;
+          padding: 1em;
+          color: $Very-Dark-Blue;
+          font-family: Barlow Condensed;
+          font-weight: 700;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mobile navigation
+.nav-mobile {
+  display: none;
+  @media (max-width: 768px) {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background: white;
+    box-shadow: 0 2px 2px 2px rgba(127, 127, 127, 0.2);
+    padding: 1em;
+    border-radius: 3px;
+    position: absolute;
+    top: 1;
+    left: 10%;
+  }
+
+  ul {
+    list-style: none;
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+    }
+    li {
+      text-transform: uppercase;
+      padding: 0.5em;
+      .navbar__grey {
+        color: $Grayish-Blue;
+      }
+      .navbar__grey-divider {
+        border: 0.4px solid $Grayish-Blue;
+      }
+      a {
+        text-decoration: none;
+        padding: 1em;
+        color: $Very-Dark-Blue;
+        font-family: Barlow Condensed;
+        font-weight: 700;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+.navbar__grey {
+  color: $Grayish-Blue;
+}
+
+main {
+  .container {
+    padding: 4em 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    @media (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+    .section-one {
+      width: 60%;
+      padding: 0 4em;
+      display: grid;
+      place-content: center;
+      @media (max-width: 768px) {
+        width: 100%;
+        padding: 4em 4em;
+      }
+      .wrapper {
+        width: 40vw;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        .section-one__title,
+        .section-one__intro-text {
+          text-transform: uppercase;
+        }
+        .section-one__title {
+          font-size: 12px;
+          color: $Dark-Grayish-Blue;
+          letter-spacing: 4px;
+          .section-one__title--inverted {
+            background: black;
+            color: #fafafa;
+            padding: 0.5em;
+            border-radius: 3em;
+            font-family: Barlow Condensed;
+          }
+        }
+        .section-one__intro-text {
+          h1 {
+            font-family: Barlow Condensed;
+            padding: 0.5em 0;
+            font-size: 48px;
+          }
+          p {
+            text-transform: initial;
+            color: $Grayish-Blue;
+          }
+        }
+        .section-one__btn-wrapper {
+          padding: 2em 0;
+          text-transform: uppercase;
+          font-family: Barlow Condensed;
+          a {
+            text-decoration: none;
+            color: $Grayish-Blue;
+            font-size: 14px;
+          }
+          .btn {
+            font-weight: 700;
+            color: white;
+            background: $Red;
+            padding: 1em 1.5em;
+            border-radius: 3px;
+          }
+          .spaced {
+            letter-spacing: 2px;
+          }
+        }
+      }
+    }
+    .section-two {
+      width: 40%;
+      @media (max-width: 768px) {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .section-two__illustration-wrapper {
+        width: 100%;
+        @media (max-width: 768px) {
+          width: 60%;
+        }
+        .illustration {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  padding: 1em;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
