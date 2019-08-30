@@ -192,6 +192,7 @@ main .container .section-one .wrapper .section-one__title .section-one__title--i
   background: black;
   color: #fafafa;
   padding: 0.5em;
+  line-height: 3em;
   border-radius: 3em;
   font-family: Barlow Condensed;
 }
@@ -229,6 +230,7 @@ main .container .section-one .wrapper .section-one__btn-wrapper .btn {
 
 main .container .section-one .wrapper .section-one__btn-wrapper .spaced {
   letter-spacing: 2px;
+  line-height: 3em;
 }
 
 main .container .section-two {
