@@ -11,14 +11,23 @@ $Red: hsl(0, 100%, 68%);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // border: 1px solid red;
 }
 body {
   font-size: 18px;
   background: #fafafa;
   font-family: Barlow;
+  overflow-x: hidden;
 }
-
+.bg-grey {
+  background: $Light-Grayish-Blue;
+  width: 100vw;
+  height: 500px;
+  position: absolute;
+  z-index: -1000;
+  border-radius: 50px;
+  top: -20%;
+  left: 50%;
+}
 header {
   display: flex;
   padding: 2em;
