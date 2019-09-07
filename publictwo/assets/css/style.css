@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  color: #2a2343;
+  font-family: Lato;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 0 10%;
+  }
+}
+
+body #tiwa-app {
+  max-width: 100%;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  body header {
+    padding: 1em 0;
+  }
+}
+
+body header .brand {
+  width: 60%;
+}
+
+body header .brand .brand-logo {
+  margin: auto;
+}
+
+body header .brand .brand-logo img {
+  max-width: 20%;
+}
+
+body header nav {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body header nav ul {
+  list-style-type: none;
+}
+
+body header nav ul li a {
+  text-decoration: none;
+  color: #2a2343;
+}
+
+body header nav ul li a:hover {
+  font-weight: bold;
+}
+
+body main .header-section {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(51, 51, 51, 0.15)), to(#000000)), url("../img/img-one.png");
+  background: linear-gradient(to top, rgba(51, 51, 51, 0.15), #000000), url("../img/img-one.png");
+  height: 50vh;
+  background-repeat: repeat;
+  background-position: center;
+  text-shadow: 0px 0px 5px #000000;
+}
+
+@media (min-width: 768px) {
+  body main .header-section {
+    text-shadow: 0px 0px 1px white;
+  }
+}
+
+body main .header-section .text-content {
+  font-size: 1.6em;
+  width: 100%;
+  padding: 5%;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  body main .header-section .text-content {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+body main .header-section .text-content h1,
+body main .header-section .text-content p {
+  text-align: center;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+  padding: 0.5em;
+}
+
+body main .section-mid {
+  margin: 2em 0;
+}
+
+body main .section-mid .row {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  body main .section-mid .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+body main .section-mid .row .col {
+  padding: 1em 0;
+}
+
+@media (min-width: 768px) {
+  body main .section-mid .row .col {
+    width: 32%;
+  }
+}
+
+body main .section-mid .row .col .mid-text-content {
+  background: #f4f4f4;
+  padding: 2em;
+  margin-top: 1em;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  body main .content-section .row-two {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+}
+
+body main .content-section .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  body main .content-section .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+body main .content-section .row .col {
+  width: 48%;
+  padding: 1em 0;
+}
+
+@media (max-width: 768px) {
+  body main .content-section .row .col {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+body main .content-section .row .col .img-wrapper {
+  margin: auto;
+}
+
+body main .content-section .row .col .img-wrapper img {
+  max-width: 100%;
+  background-size: cover;
+}
+
+body main .content-section .row .col .section-text-wrapper .intro-text {
+  background: #2a2343;
+  color: #ffffff;
+  padding: 1em 1em;
+  border-radius: 2px;
+  width: 100px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  body main .content-section .row .col .section-text-wrapper .intro-text {
+    margin: auto;
+  }
+}
+
+body main .content-section .row .col .section-text-wrapper h2 {
+  font-weight: 400;
+  margin: 0.5em 0;
+}
+
+body main .content-section .row .col .section-text-wrapper .p-text {
+  font-weight: 300;
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+  body main .content-section .row .col .section-text-wrapper .p-text {
+    margin: auto;
+  }
+}
+
+body main .content-section .row .col .section-text-wrapper .p-text p {
+  margin: 1em 0;
+}
+
+body footer {
+  background: url("/assets/img/footer-bg.png");
+  background-size: cover;
+  color: white;
+  padding: 2em;
+  margin-top: 2em;
+}
+
+@media (min-width: 768px) {
+  body footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  body footer .content-one {
+    width: 50%;
+  }
+}
+
+body footer .content-one p {
+  line-height: 1.5em;
+}
+
+body footer .content-two {
+  margin-top: 2em;
+}
+
+@media (min-width: 768px) {
+  body footer .content-two {
+    width: 50%;
+    margin-top: 0;
+    text-align: center;
+  }
+}
+
+body footer .content-two .form-group input {
+  padding: 1.5em 6em;
+  border: 0;
+  margin-top: 1em;
+}
+
+@media (min-width: 768px) {
+  body footer .content-two .form-group input {
+    padding: 1.5em 6%;
+  }
+}
+
+body footer .content-two .form-group input[type="email"] {
+  border-radius: 5px 0 0 5px;
+  background: rgba(255, 255, 255, 0.502);
+  outline: none;
+}
+
+body footer .content-two .form-group input[type="email"]::-webkit-input-placeholder {
+  color: #2a2343;
+}
+
+body footer .content-two .form-group input[type="email"]:-ms-input-placeholder {
+  color: #2a2343;
+}
+
+body footer .content-two .form-group input[type="email"]::-ms-input-placeholder {
+  color: #2a2343;
+}
+
+body footer .content-two .form-group input[type="email"]::placeholder {
+  color: #2a2343;
+}
+
+body footer .content-two .form-group input[type="submit"] {
+  border-radius: 0 5px 5px 0;
+  color: #ffffff;
+  background: #000000;
+  padding: 1.5em 4em;
+  margin-left: -4px;
+}
+/*# sourceMappingURL=style.css.map */

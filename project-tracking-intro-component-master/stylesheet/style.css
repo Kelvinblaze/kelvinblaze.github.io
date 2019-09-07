@@ -7,11 +7,15 @@
           box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 body {
   font-size: 18px;
   background: #fafafa;
   font-family: Barlow;
-  overflow-x: hidden;
 }
 
 .bg-grey {
