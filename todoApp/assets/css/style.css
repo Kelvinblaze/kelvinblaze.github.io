@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  background: #333333;
+  font-family: Google Sans;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  background: #f9dca6;
+  width: 375px;
+  height: 90%;
+  margin: 2% auto;
+  border-radius: 1.5em;
+}
+
+.container header {
+  padding: 2em;
+  color: #dc900e;
+}
+
+.container header h1,
+.container header p {
+  padding-top: 0.4em;
+}
+
+.container main {
+  background: #ffffff;
+  padding: 2em;
+  border-radius: 1.5em;
+  height: calc(100% - 23%);
+}
+
+.container main .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #ffffff;
+  padding: 0.5em;
+  border-radius: 1.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.container main .card .details .text-field {
+  width: 100%;
+  padding: 0.2em;
+  margin-left: 1em;
+  outline: none;
+  white-space: nowrap;
+}
+
+.container main .card .delBtn #delete {
+  color: red;
+  border: none;
+  border-radius: 50%;
+  display: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 20px;
+}
+
+.container main .add-wrapper {
+  text-align: center;
+  position: relative;
+  top: 75%;
+  font-size: 50px;
+}
+
+.container main .add-wrapper #add {
+  color: #33333364;
+}
+
+.container main .add-wrapper #add:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=style.css.map */

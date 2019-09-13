@@ -10,6 +10,7 @@ $grey: #e5e5e5;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  // border: 1px solid red;
 }
 
 // Declared Font-Family For Headings and Paragraph
@@ -21,7 +22,59 @@ p,
 a {
   font-family: "Lato", sans-serif;
 }
-
+#myDialogue {
+  font-family: "Lato", sans-serif;
+  width: 50%;
+  height: auto;
+  background: #f4f4f4;
+  margin: 2% auto;
+  border: 1px solid black;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+  &::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .tester-header {
+    background: #7b17e5;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+  form {
+    margin-top: 0.5rem;
+    padding: 2em;
+    .form-group {
+      margin-top: 0.5rem;
+      input {
+        margin-top: 0.5rem;
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 4px;
+        border: 1px solid rgba(0, 0, 0, 0.315);
+        &:active,
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .text-center {
+      text-align: center;
+      .submitBtn {
+        margin-top: 1rem;
+        padding: 1.5em 4em;
+        border: none;
+        background: #7b17e5;
+        color: white;
+        border-radius: 4px;
+        &:active,
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
 body {
   .body-wrapper {
     padding: 0;
@@ -44,25 +97,25 @@ body {
             }
           }
         }
-        .softnexus{
-            @media (max-width: 768px){
-              display: none;
-            }
+        .softnexus {
+          @media (max-width: 768px) {
+            display: none;
+          }
         }
         .product-logo {
           display: flex;
           justify-content: center;
-          width: 80px;
+          width: 100px;
           height: auto;
           img {
-            max-width: 50%;
+            max-width: 100%;
           }
         }
       }
       // Jumbotron
       .jumbotron {
         width: 100%;
-        height: auto;
+        height: 80vh;
         padding: 12%;
         margin: auto;
         background: linear-gradient(to top, rgba(0, 0, 0, 0.5)),
@@ -71,69 +124,106 @@ body {
         background-repeat: no-repeat;
         color: white;
         text-align: center;
-        @media (max-width: 768px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 768px) {
           padding: 10%;
         }
         .jumbotron-text {
           h1,
-          p {
+          p,
+          .mail-wrapper {
             padding: 0.5em;
           }
-        }
-      }
-      .scroller {
-        // Scroll button container
-        width: 91%;
-        height: 80px;
-        margin: auto;
-        @media (max-width: 768px) {
-          display: flex;
-          justify-content: center;
-        }
-        // Scroll button
-        .scroll-btn {
-          padding: 1em;
-          font-size: 18px;
-          background: $grey;
-          color: rgba(42, 45, 67, 0.694);
-          margin: 0.5em;
-          float: right;
-          border: none;
-          &:hover {
-            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.19);
-          }
-          @media (max-width: 768px) {
-            float: none;
-          }
-        }
-      }
-
-      // Three column Layout
-      .container {
-        margin-top: 2em;
-        .row {
-          display: flex;
-          width: 80%;
-          margin: auto;
-          justify-content: space-between;
-          @media (max-width: 768px) {
-            display: block;
-            width: 90%;
-          }
-          .col-3 {
-            width: 30%;
-            @media (max-width: 768px) {
-              width: 100%;
-              padding: 1em;
-            }
-            .text-container {
-              text-align: center;
-              background: #e5e5e5b3;
-              p {
-                font-family: "Merriweather", serif;
-                padding: 2em;
+          .mail-wrapper {
+            margin-top: 4em;
+            a {
+              color: white;
+              padding: 1em 2em;
+              border: 2px solid white;
+              text-decoration: none;
+              color: white;
+              border-radius: 4px;
+              &:hover {
+                color: $dark-purple;
+                background: white;
+                border: none;
+                font-weight: bolder;
               }
             }
+          }
+        }
+      }
+      // .scroller {
+      //   // Scroll button container
+      //   width: 91%;
+      //   height: 80px;
+      //   margin: auto;
+      //   @media (max-width: 768px) {
+      //     display: flex;
+      //     justify-content: center;
+      //   }
+      //   // Scroll button
+      //   .scroll-btn {
+      //     padding: 1em;
+      //     font-size: 18px;
+      //     background: $grey;
+      //     color: rgba(42, 45, 67, 0.694);
+      //     margin: 0.5em;
+      //     float: right;
+      //     border: none;
+      //     &:hover {
+      //       box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.19);
+      //     }
+      //     @media (max-width: 768px) {
+      //       float: none;
+      //     }
+      //   }
+      // }
+
+      // // Three column Layout
+      // .container {
+      //   margin-top: 2em;
+      //   .row {
+      //     display: flex;
+      //     width: 80%;
+      //     margin: auto;
+      //     justify-content: space-between;
+      //     @media (max-width: 768px) {
+      //       display: block;
+      //       width: 90%;
+      //     }
+      //     .col-3 {
+      //       width: 30%;
+      //       @media (max-width: 768px) {
+      //         width: 100%;
+      //         padding: 1em;
+      //       }
+      //       .text-container {
+      //         text-align: center;
+      //         background: #e5e5e5b3;
+      //         p {
+      //           font-family: "Merriweather", serif;
+      //           padding: 2em;
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
+      .goal-wrapper {
+        text-align: center;
+        width: 100%;
+        height: auto;
+        background: #fafafa;
+        margin-top: 4em;
+        h3 {
+          font-family: "Lato", sans-serif;
+          width: 60%;
+          padding: 1em;
+          margin: auto;
+          @media (max-width: 768px) {
+            width: 100%;
           }
         }
       }
@@ -166,8 +256,8 @@ body {
               }
             }
             .text-container {
-                width: 80%;
-                margin: auto;
+              width: 80%;
+              margin: auto;
               h1,
               p {
                 margin: 1em 0;
@@ -200,7 +290,7 @@ body {
               width: 100%;
             }
             .vector-map {
-                text-align: center;
+              text-align: center;
               @media (max-width: 768px) {
                 display: none;
               }
@@ -232,14 +322,15 @@ body {
   }
   //   Footer
   .footer {
-    background: url("../images/footer-bg.png");
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)),
+      url("../images/footer-bg.png");
     background-size: cover;
     color: white;
     padding: 2em;
     margin-top: 2em;
+
     @media (min-width: 768px) {
       display: flex;
-      justify-content: space-between;
       align-items: center;
     }
     .content-one {
@@ -260,21 +351,22 @@ body {
       @media (min-width: 768px) {
         width: 50%;
         margin-top: 0;
-        text-align: center;
+        margin-left: 4em;
       }
       .form-group {
         input {
-          padding: 1.5em 15%;
+          padding: 1.5em 1%;
           border: 0;
           margin-top: 1em;
-          @media (max-width: 768px){
-          padding: 1.5em 6%;
+          @media (max-width: 768px) {
+            padding: 1.5em 6%;
           }
         }
         input[type="email"] {
           border-radius: 5px 0 0 5px;
           background: rgba(255, 255, 255, 0.502);
           outline: none;
+          width: 50%;
           &::placeholder {
             color: #2a2343;
           }

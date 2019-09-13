@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Todo App</title>
+    <!-- Css Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Good Morning</h1>
+            <p id="today-date"></p>
+        </header>
+
+        <main id="main">
+            <!-- Card -->
+            <div class="card" id="card">
+                <div class="details" id="details">
+                    <p contenteditable="true" id="text-field" class="text-field">Wash clothes by 3:30pm</p>
+                </div>
+                <div class="delBtn">
+                    <i class="fa fa-times-circle" id="delete"></i>
+                </div>
+            </div>
+
+
+
+            <!-- Add New element -->
+            <div class="add-wrapper">
+                <i class="fa fa-plus-circle" id="add"></i>
+            </div>
+        </main>
+    </div>
+
+    <!-- Main Script -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

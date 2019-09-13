@@ -17,6 +17,74 @@ a {
   font-family: "Lato", sans-serif;
 }
 
+#myDialogue {
+  font-family: "Lato", sans-serif;
+  width: 50%;
+  height: auto;
+  background: #f4f4f4;
+  margin: 2% auto;
+  border: 1px solid black;
+}
+
+@media (max-width: 768px) {
+  #myDialogue {
+    width: 90%;
+  }
+}
+
+#myDialogue::-webkit-backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#myDialogue::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#myDialogue .tester-header {
+  background: #7b17e5;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+#myDialogue form {
+  margin-top: 0.5rem;
+  padding: 2em;
+}
+
+#myDialogue form .form-group {
+  margin-top: 0.5rem;
+}
+
+#myDialogue form .form-group input {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.315);
+}
+
+#myDialogue form .form-group input:active, #myDialogue form .form-group input:focus {
+  outline: none;
+}
+
+#myDialogue form .text-center {
+  text-align: center;
+}
+
+#myDialogue form .text-center .submitBtn {
+  margin-top: 1rem;
+  padding: 1.5em 4em;
+  border: none;
+  background: #7b17e5;
+  color: white;
+  border-radius: 4px;
+}
+
+#myDialogue form .text-center .submitBtn:active, #myDialogue form .text-center .submitBtn:focus {
+  outline: none;
+}
+
 body .body-wrapper {
   padding: 0;
 }
@@ -60,17 +128,17 @@ body .body-wrapper header nav .product-logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80px;
+  width: 100px;
   height: auto;
 }
 
 body .body-wrapper header nav .product-logo img {
-  max-width: 50%;
+  max-width: 100%;
 }
 
 body .body-wrapper header .jumbotron {
   width: 100%;
-  height: auto;
+  height: 80vh;
   padding: 12%;
   margin: auto;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5))), url("../images/jumbotron.png");
@@ -79,6 +147,15 @@ body .body-wrapper header .jumbotron {
   background-repeat: no-repeat;
   color: white;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -88,89 +165,50 @@ body .body-wrapper header .jumbotron {
 }
 
 body .body-wrapper header .jumbotron .jumbotron-text h1,
-body .body-wrapper header .jumbotron .jumbotron-text p {
+body .body-wrapper header .jumbotron .jumbotron-text p,
+body .body-wrapper header .jumbotron .jumbotron-text .mail-wrapper {
   padding: 0.5em;
 }
 
-body .body-wrapper header .scroller {
-  width: 91%;
-  height: 80px;
-  margin: auto;
+body .body-wrapper header .jumbotron .jumbotron-text .mail-wrapper {
+  margin-top: 4em;
 }
 
-@media (max-width: 768px) {
-  body .body-wrapper header .scroller {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+body .body-wrapper header .jumbotron .jumbotron-text .mail-wrapper a {
+  color: white;
+  padding: 1em 2em;
+  border: 2px solid white;
+  text-decoration: none;
+  color: white;
+  border-radius: 4px;
 }
 
-body .body-wrapper header .scroller .scroll-btn {
-  padding: 1em;
-  font-size: 18px;
-  background: #e5e5e5;
-  color: rgba(42, 45, 67, 0.694);
-  margin: 0.5em;
-  float: right;
+body .body-wrapper header .jumbotron .jumbotron-text .mail-wrapper a:hover {
+  color: #2a2d43;
+  background: white;
   border: none;
+  font-weight: bolder;
 }
 
-body .body-wrapper header .scroller .scroll-btn:hover {
-  -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.19);
-}
-
-@media (max-width: 768px) {
-  body .body-wrapper header .scroller .scroll-btn {
-    float: none;
-  }
-}
-
-body .body-wrapper header .container {
-  margin-top: 2em;
-}
-
-body .body-wrapper header .container .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 80%;
-  margin: auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media (max-width: 768px) {
-  body .body-wrapper header .container .row {
-    display: block;
-    width: 90%;
-  }
-}
-
-body .body-wrapper header .container .row .col-3 {
-  width: 30%;
-}
-
-@media (max-width: 768px) {
-  body .body-wrapper header .container .row .col-3 {
-    width: 100%;
-    padding: 1em;
-  }
-}
-
-body .body-wrapper header .container .row .col-3 .text-container {
+body .body-wrapper header .goal-wrapper {
   text-align: center;
-  background: #e5e5e5b3;
+  width: 100%;
+  height: auto;
+  background: #fafafa;
+  margin-top: 4em;
 }
 
-body .body-wrapper header .container .row .col-3 .text-container p {
-  font-family: "Merriweather", serif;
-  padding: 2em;
+body .body-wrapper header .goal-wrapper h3 {
+  font-family: "Lato", sans-serif;
+  width: 60%;
+  padding: 1em;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  body .body-wrapper header .goal-wrapper h3 {
+    width: 100%;
+  }
 }
 
 body .body-wrapper main .section-one {
@@ -305,7 +343,8 @@ body .body-wrapper main .section-two .row .col .text-wrapper p {
 }
 
 body .footer {
-  background: url("../images/footer-bg.png");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5))), url("../images/footer-bg.png");
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5)), url("../images/footer-bg.png");
   background-size: cover;
   color: white;
   padding: 2em;
@@ -317,9 +356,6 @@ body .footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -349,12 +385,12 @@ body .footer .content-two {
   body .footer .content-two {
     width: 50%;
     margin-top: 0;
-    text-align: center;
+    margin-left: 4em;
   }
 }
 
 body .footer .content-two .form-group input {
-  padding: 1.5em 15%;
+  padding: 1.5em 1%;
   border: 0;
   margin-top: 1em;
 }
@@ -369,6 +405,7 @@ body .footer .content-two .form-group input[type="email"] {
   border-radius: 5px 0 0 5px;
   background: rgba(255, 255, 255, 0.502);
   outline: none;
+  width: 50%;
 }
 
 body .footer .content-two .form-group input[type="email"]::-webkit-input-placeholder {

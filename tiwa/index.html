@@ -13,61 +13,73 @@
 
 <body>
     <div class="body-wrapper">
-        <!-- Header  Starts -->
+        
+         <!-- Modal for Beta Tester -->
+         <dialog id="myDialogue">
+                <header class="tester-header">
+                    <h2>Become our First Tester</h2>
+                </header>
+                <main class="tester-content">
+                    <form method="post">
+                        <div class="form-group">
+                            <label for="Your Name">Your Name (required)</label> <br>
+                            <input type="text"  name="Name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Email" >Your Email (required)</label><br>
+                            <input type="email" placeholder="Email Address" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Tel" class="align-left">Phone Number</label><br>
+                            <input type="tel" placeholder="Mobile number" name="tel" required>
+                        </div>
+                        <div class="form-group">
+                                <label for="Who are you">Who are you? </label> <br>
+                                <input type="text"  name="who" placeholder="Fashion Designer, Fashion Lover, Model, Others..">
+                            </div>
+                        
+                        <div class="text-center">
+                            <button class="submitBtn" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </main>
+            </dialog>
+
+            <!-- Header  Starts -->
         <header>
             <!-- Navigation Bar -->
             <nav class="navbar">
                 <ul class="softnexus">
-                    <li><a href="#">SoftNexus</a></li>
+                    <li><a href="https://softnexus.co" target="_blank">SoftNexus</a></li>
                 </ul>
                 <div class="product-logo">
                     <img src="assets/images/logo.png" alt="Tiwa-Logo">
                 </div>
                 <ul>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="mailto:info@softnexus.co">Contact Us</a></li>
                 </ul>
             </nav>
 
             <!-- Jumbotron Image-->
             <div class="jumbotron">
                 <div class="jumbotron-text">
-                    <h1>Lorem ipsum dolor sit amet consectetur amet</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                </div>
-
-            </div>
-
-            <!-- Scroll Button -->
-            <div class="scroller">
-                <a href="#main">
-                    <button class="scroll-btn"><i class="fa fa-arrow-down"></i></button></a>
-            </div>
-
-            <!-- Three Column Containers -->
-            <div class="container">
-                <div class="row">
-                    <!-- First Column -->
-                    <div class="col col-3">
-                        <div class="text-container">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
-                        </div>
-                    </div>
-
-                    <!-- Second Column -->
-                    <div class="col col-3">
-                        <div class="text-container">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
-                        </div>
-                    </div>
-
-                    <!-- Third Column -->
-                    <div class="col col-3">
-                        <div class="text-container">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
-                        </div>
+                    <h1>African Fashion Designers are Incredibly Creative.</h1>
+                    <p>But what good is it if nobody sees their beautiful and elegant designs?</p>
+                    <div class="mail-wrapper">
+                        <a href="" id="joinNow">Join Now</a>
                     </div>
                 </div>
+
             </div>
+
+            <div class="goal-wrapper">
+                <h3>We identified this problem and began working on building a platform that helps fashion designers
+                    showcase their works of art and get customers from all over the world. And thus, Tiwa was born.
+                    </h2>
+                    <h3>All you, as a fashion designer, needs to do is to download the Tiwa app, create an account, and
+                        start posting. It’s that easy.</h3>
+            </div>
+
         </header>
 
         <!-- Main Content Starts -->
@@ -85,8 +97,14 @@
                     <!-- Second Column -->
                     <div class="col col-2">
                         <div class="text-container">
-                            <h2>Lorem ipsum dolor sit amet consectetur amet </h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                            <h2>A Portfolio for you.</h2>
+                            <p>You get a personal page on the app where all your posts will be displayed. You can share
+                                a short link to your page to your prospects when they ask for your portfolio; we call
+                                this Quick Portfolio
+                            </p>
+                            <p>You can also follow other accounts, and other accounts can follow you if they like what
+                                you’re posting; just imagine an Instagram just for fashion designers.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -101,8 +119,12 @@
                     <!-- Second Column -->
                     <div class="col col-2">
                         <div class="text-container">
-                            <h2>Lorem ipsum dolor sit amet consectetur amet </h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                            <h2>See the latest fashion trends and also get reviews for your works.</h2>
+                            <p>Tiwa has a “Trends” section where you can monitor the latest fashion craze on the
+                                platform and keep up with the trends.
+                            </p>
+                            <p>Customers can also like your posts and leave comments to show interest or compliment your
+                                work.</p>
                         </div>
                     </div>
                 </div>
@@ -117,8 +139,11 @@
                     <!-- Second Column -->
                     <div class="col col-2">
                         <div class="text-container">
-                            <h2>Lorem ipsum dolor sit amet consectetur amet </h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                            <h2>Sell, sell more with Analytics you can rely on.</h2>
+                            <p>Customers can make direct custom orders from the app, using a form that you can customize
+                                as you wish. </p>
+                            <p>Tiwa provides analytics that you can use to track sales and engagement on the platform.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -142,17 +167,8 @@
                     </div>
                     <!-- Third column -->
                     <div class="col">
-                        <!-- First Text Wrapper -->
-                        <div class="text-wrapper">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
-                        </div>
-                        <!-- Second Text Wrapper -->
-                        <div class="text-wrapper">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
-                        </div>
-                        <!-- Third Text Wrapper -->
-                        <div class="text-wrapper">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                        <div class="vector-map">
+                            <img src="assets/images/map.png" alt="Vector-Map-Design">
                         </div>
                     </div>
                 </div>
@@ -163,10 +179,10 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="content-one">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo aspernatur eaque praesentium cum eum est
-                natus facilis? Sit repellat molestias nisi repellendus itaque. Voluptate quam iure laboriosam
-                repudiandae, autem voluptatibus?</p>
+            <h1>Be a part of something big.</h1>
+            <p>Our sole aim is bridge the gap between fashion designers and the people who love and are willing to
+                purchase the very best of African fashion.</p>
+            <p>Enter your email to be the first to get notified when we go live.</p>
         </div>
 
         <div class="content-two">
@@ -176,4 +192,10 @@
                 <input type="submit" value="send">
             </div>
         </div>
-    </footer </body> </html>
+    </footer>
+
+    <!-- Script -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
