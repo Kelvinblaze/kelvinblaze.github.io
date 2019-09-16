@@ -7,45 +7,77 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tiwa</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="keywords" content="Tiwa, Fashion, Fashion Community, African Fashion" />
+    <meta name="description" content="" />
+
+    <meta name="theme-color" content="#7B17E5">
+
+    <meta property="og:title" content="Tiwa" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tiwa.africa/" />
+    <!-- <meta property="og:image" content="" /> -->
+    <meta property="og:description" content="" />
+
+    <link rel="shortcut icon" sizes="16x16" href="https://tiwa.africa/assets/img/favicon-16px.ico" type="image/x-icon">
+    <link rel="shortcut icon" sizes="32x32" href="https://tiwa.africa/assets/img/favicon-32px.ico" type="image/x-icon">
+    <link rel="shortcut icon" sizes="64x64" href="https://tiwa.africa/assets/img/favicon-64px.ico" type="image/x-icon">
+    <link rel="shortcut icon" sizes="96x96" href="https://tiwa.africa/assets/img/favicon-96px.ico" type="image/x-icon">
+    <link rel="shortcut icon" sizes="160x160" href="https://tiwa.africa/assets/img/favicon-160px.ico"
+        type="image/x-icon">
+    <link rel="shortcut icon" sizes="196x196" href="https://tiwa.africa/assets/img/favicon-196px.ico"
+        type="image/x-icon">
+
+    <title>Tiwa</title>
 </head>
 
 <body>
     <div class="body-wrapper">
-        
-         <!-- Modal for Beta Tester -->
-         <dialog id="myDialogue">
-                <header class="tester-header">
-                    <h2>Become our First Tester</h2>
-                </header>
-                <main class="tester-content">
-                    <form method="post">
-                        <div class="form-group">
-                            <label for="Your Name">Your Name (required)</label> <br>
-                            <input type="text"  name="Name" placeholder="Full Name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="Email" >Your Email (required)</label><br>
-                            <input type="email" placeholder="Email Address" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="Tel" class="align-left">Phone Number</label><br>
-                            <input type="tel" placeholder="Mobile number" name="tel" required>
-                        </div>
-                        <div class="form-group">
-                                <label for="Who are you">Who are you? </label> <br>
-                                <input type="text"  name="who" placeholder="Fashion Designer, Fashion Lover, Model, Others..">
-                            </div>
-                        
-                        <div class="text-center">
-                            <button class="submitBtn" type="submit">Submit</button>
-                        </div>
-                    </form>
-                </main>
-            </dialog>
 
-            <!-- Header  Starts -->
+        <!-- Modal for Beta Tester -->
+        <dialog id="myDialogue">
+            <header class="tester-header">
+                <h2>Become our First Tester</h2>
+            </header>
+            <main class="tester-content">
+                <form method="post">
+                    <div class="form-group">
+                        <label for="Your Name">Your Name (required)</label> <br>
+                        <input type="text" name="Name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Your Email (required)</label><br>
+                        <input type="email" placeholder="Email Address" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Tel" class="align-left">Phone Number</label><br>
+                        <input type="tel" placeholder="Mobile number" name="tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Who are you">Who are you? </label> <br>
+                        <input type="text" name="who" placeholder="Fashion Designer, Fashion Lover, Model, Others..">
+                    </div>
+
+                    <div class="text-center">
+                        <button class="submitBtn" type="submit">Submit</button>
+                    </div>
+                    <div class="text-center">
+                        <a href="#" class="closeDialog" id="closeDialog">Cancel</a>
+                    </div>
+                </form>
+            </main>
+        </dialog>
+
+        <!-- Success Diagolue -->
+        <dialog>
+
+        </dialog>
+
+
+        <!-- Header  Starts -->
         <header>
             <!-- Navigation Bar -->
             <nav class="navbar">
@@ -176,26 +208,29 @@
 
         </main>
     </div>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="content-one">
             <h1>Be a part of something big.</h1>
             <p>Our sole aim is bridge the gap between fashion designers and the people who love and are willing to
                 purchase the very best of African fashion.</p>
-            <p>Enter your email to be the first to get notified when we go live.</p>
         </div>
 
         <div class="content-two">
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="Email">Email</label><br>
                 <input type="email" placeholder="Enter your email address">
                 <input type="submit" value="send">
-            </div>
+            </div> -->
         </div>
     </footer>
 
     <!-- Script -->
     <script src="assets/js/main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-firestore.js"></script>
+    <script src="assets/js/firebase.js"></script>
 </body>
 
 </html>

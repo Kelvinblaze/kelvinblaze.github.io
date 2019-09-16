@@ -13,6 +13,15 @@ $grey: #e5e5e5;
   // border: 1px solid red;
 }
 
+// utitlies
+.d-none {
+  display: none;
+}
+
+.over-flow-y {
+  overflow-y: hidden;
+}
+
 // Declared Font-Family For Headings and Paragraph
 h1,
 h2 {
@@ -28,7 +37,7 @@ a {
   height: auto;
   background: #f4f4f4;
   margin: 2% auto;
-  border: 1px solid black;
+  border: none;
   @media (max-width: 768px) {
     width: 90%;
   }
@@ -71,6 +80,10 @@ a {
         &:focus {
           outline: none;
         }
+      }
+      .closeDialog{
+        margin-top: 1em ;
+        color: rgb(160, 24, 24);
       }
     }
   }
@@ -155,62 +168,7 @@ body {
           }
         }
       }
-      // .scroller {
-      //   // Scroll button container
-      //   width: 91%;
-      //   height: 80px;
-      //   margin: auto;
-      //   @media (max-width: 768px) {
-      //     display: flex;
-      //     justify-content: center;
-      //   }
-      //   // Scroll button
-      //   .scroll-btn {
-      //     padding: 1em;
-      //     font-size: 18px;
-      //     background: $grey;
-      //     color: rgba(42, 45, 67, 0.694);
-      //     margin: 0.5em;
-      //     float: right;
-      //     border: none;
-      //     &:hover {
-      //       box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.19);
-      //     }
-      //     @media (max-width: 768px) {
-      //       float: none;
-      //     }
-      //   }
-      // }
 
-      // // Three column Layout
-      // .container {
-      //   margin-top: 2em;
-      //   .row {
-      //     display: flex;
-      //     width: 80%;
-      //     margin: auto;
-      //     justify-content: space-between;
-      //     @media (max-width: 768px) {
-      //       display: block;
-      //       width: 90%;
-      //     }
-      //     .col-3 {
-      //       width: 30%;
-      //       @media (max-width: 768px) {
-      //         width: 100%;
-      //         padding: 1em;
-      //       }
-      //       .text-container {
-      //         text-align: center;
-      //         background: #e5e5e5b3;
-      //         p {
-      //           font-family: "Merriweather", serif;
-      //           padding: 2em;
-      //         }
-      //       }
-      //     }
-      //   }
-      // }
       .goal-wrapper {
         text-align: center;
         width: 100%;
@@ -320,6 +278,7 @@ body {
       }
     }
   }
+
   //   Footer
   .footer {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5)),
