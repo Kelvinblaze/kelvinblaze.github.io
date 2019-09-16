@@ -46,6 +46,8 @@ switch (month) {
 var fullDate = `${day} ${month}, ${year}`;
 document.getElementById("today-date").innerHTML = fullDate;
 
+var i = 0;
+var j = 0;
 // Add New Card
 var addBtn = document.getElementById("add");
 addBtn.addEventListener("click", function() {
@@ -61,7 +63,8 @@ addBtn.addEventListener("click", function() {
 
     // Class attributes and classes
     card.classList.add("card");
-    card.setAttribute("id", "card");
+    cardId = `card${i++}`;
+    card.setAttribute("id", cardId);
 
     // Details attributes and classes
     details.classList.add("details");
@@ -70,54 +73,27 @@ addBtn.addEventListener("click", function() {
     // Paragraph attributes and classes
     myPara.classList.add("text-field");
     myPara.setAttribute("contenteditable", "true");
-    myPara.setAttribute("id", "text-field");
+    // myPara.setAttribute("id", "text-field");
     myPara.textContent = para;
 
     // Create Delete Btn
     deleteBtn_wrapper.classList.add("delBtn");
     deleteBtn.classList.add("fa", "fa-times-circle");
-    deleteBtn.setAttribute("id", "delete");
+    deleteId = `delete${j++}`;
+    deleteBtn.setAttribute("id", deleteId);
 
     details.append(myPara);
     deleteBtn_wrapper.append(deleteBtn);
     card.append(details, deleteBtn_wrapper);
     document.getElementById("main").appendChild(card);
 
-    // card hovering and delete functions
-    var cardHover = document.getElementById("card");
+    // Card functionalities
 
-    cardHover.addEventListener("mouseover", function() {
-      console.log("i am in");
-      document.getElementById("delete").style.display = "block";
-    });
-
-    var cardHover = document.getElementById("card");
-    cardHover.addEventListener("mouseout", function() {
-      document.getElementById("delete").style.display = "none";
-    });
-
-    // Make Editable
-    var changeDetails = document.getElementById("details");
-    details.addEventListener("click", function() {
-      document
-        .getElementById("details")
-        .setAttribute("contenteditable", "true");
-    });
-
-    // Remove Editable
-    var changeDetails = document.getElementById("details");
-    details.addEventListener("mouseout", function() {
-      document
-        .getElementById("details")
-        .setAttribute("contenteditable", "false");
-    });
-
-    // Delete Card
-    var deleteCard = document.getElementById("delete");
-    deleteCard.addEventListener("click", function() {
-      var x = confirm("Are you sure you want to delete this?");
-      if (x) {
-        document.getElementById("card").remove();
+    var deleteItem = document.getElementById(deleteId);
+    deleteItem.addEventListener("click", function() {
+      var confirmDelete = confirm("Are you sure you want to delete this task?");
+      if (confirmDelete) {
+        deleteItem.parentElement.parentElement.remove();
       } else {
         return;
       }
