@@ -55,22 +55,60 @@ p {
   }
 }
 
-#form-modal {
+.modal-animation {
+  -webkit-animation: modalanim 0.2s linear;
+          animation: modalanim 0.2s linear;
+}
+
+@-webkit-keyframes modalanim {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalanim {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.backdrop {
+  background: #333333b0;
+}
+
+.rmvbackdrop {
+  background: none;
+}
+
+.form-modal {
+  background: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 50%;
-  height: 60vh;
-  margin: auto;
-  overflow: hidden;
+  height: auto;
   border: none;
   border-radius: 4px;
+  display: none;
+  -webkit-box-shadow: 0 0 5px 0;
+          box-shadow: 0 0 5px 0;
 }
 
 @media (max-width: 800px) {
-  #form-modal {
+  .form-modal {
     width: 90%;
   }
 }
 
-#form-modal .form-header {
+.form-modal .form-header {
   background: #2d3436;
   color: white;
   display: -webkit-box;
@@ -85,25 +123,54 @@ p {
   padding: 1rem;
 }
 
-#form-modal .form-header h1 {
+.form-modal .form-header h1 {
   font-size: 24px;
 }
 
-#form-modal .form-header i {
+.form-modal .form-header i {
   font-size: 24px;
   color: #ffffff50;
 }
 
-#form-modal .form-header i:hover {
+.form-modal .form-header i:hover {
   color: #ffffff;
 }
 
-#form-modal::-webkit-backdrop {
-  background: #00000050;
+.form-modal .form {
+  padding: 1rem;
 }
 
-#form-modal::backdrop {
-  background: #00000050;
+.form-modal .form .form-group {
+  margin-top: 1rem;
+}
+
+.form-modal .form .form-group input {
+  margin-top: 0.4rem;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #2d343660;
+  outline: none;
+}
+
+.form-modal .form-footer {
+  padding: 1rem;
+}
+
+.form-modal .form-footer .submit-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.form-modal .form-footer .submit-btn input[type="submit"] {
+  padding: 1rem 2rem;
+  background: #2d3436;
+  color: white;
+  border: none;
 }
 
 header .navbar ul {
@@ -575,32 +642,6 @@ footer .footer-content .row .social-links a:hover {
   }
 }
 
-.gallery-bg-image {
-  margin-top: 5rem;
-  line-height: 3rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000000a7)), url("../images/gallery/Rectangle 6.png");
-  background: linear-gradient(to bottom, #000000a7), url("../images/gallery/Rectangle 6.png");
-  width: 100%;
-  height: 60vh;
-  text-align: center;
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
-  color: white;
-  background-size: cover;
-}
-
-.gallery-bg-image h1 {
-  width: 70%;
-  margin: auto;
-}
-
-@media (max-width: 768px) {
-  .gallery-bg-image {
-    margin-top: 0;
-  }
-}
-
 .gallery-images {
   width: 100%;
   margin: auto;
@@ -628,6 +669,10 @@ footer .footer-content .row .social-links a:hover {
 
 .gallery-images img {
   max-width: 100%;
+}
+
+.past-gallery h1, .past-gallery p {
+  margin: 1rem 0;
 }
 
 .winners-image {

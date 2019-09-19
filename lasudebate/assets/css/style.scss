@@ -37,14 +37,38 @@ p {
   }
 }
 
+.modal-animation {
+  animation: modalanim 0.2s linear;
+}
+
+@keyframes modalanim {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.backdrop {
+  background: #333333b0;
+}
+.rmvbackdrop{
+  background: none;
+}
 // SIGNUP MODAL
-#form-modal {
+.form-modal {
+  background: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 50%;
-  height: 60vh;
-  margin: auto;
-  overflow: hidden;
+  height: auto;
   border: none;
   border-radius: 4px;
+  display: none;
+  box-shadow: 0 0 5px 0 ; 
   @media (max-width: 800px) {
     width: 90%;
   }
@@ -66,8 +90,32 @@ p {
       }
     }
   }
-  &::backdrop {
-    background: #00000050;
+  .form {
+    padding: 1rem;
+    .form-group {
+      margin-top: 1rem;
+      input {
+        margin-top: 0.4rem;
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid #2d343660;
+        outline: none;
+      }
+    }
+  }
+  .form-footer {
+    padding: 1rem;
+    .submit-btn {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 1rem;
+      input[type="submit"] {
+        padding: 1rem 2rem;
+        background: #2d3436;
+        color: white;
+        border: none;
+      }
+    }
   }
 }
 
@@ -415,28 +463,6 @@ footer {
   }
 }
 
-// GALLERY BACKGROUND IMAGE
-.gallery-bg-image {
-  margin-top: 5rem;
-  line-height: 3rem;
-  background: linear-gradient(to bottom, #000000a7),
-    url("../images/gallery/Rectangle\ 6.png");
-  width: 100%;
-  height: 60vh;
-  text-align: center;
-  display: grid;
-  place-content: center;
-  color: white;
-  background-size: cover;
-  h1 {
-    width: 70%;
-    margin: auto;
-  }
-  @media (max-width: 768px) {
-    margin-top: 0;
-  }
-}
-
 // GALLERY IMAGES
 .gallery-images {
   width: 100%;
@@ -455,7 +481,11 @@ footer {
     max-width: 100%;
   }
 }
-
+.past-gallery {
+  h1 ,p{
+    margin: 1rem 0;
+  }
+}
 // 2017 WINNERS
 .winners-image {
   margin-top: 5rem;
