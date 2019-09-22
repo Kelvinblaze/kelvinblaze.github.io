@@ -93,7 +93,7 @@ html {
   white-space: nowrap;
 }
 
-.container main .card .delBtn #delete {
+.container main .card .delBtn .delete {
   color: red;
   border: none;
   border-radius: 50%;

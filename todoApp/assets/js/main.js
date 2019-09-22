@@ -98,6 +98,21 @@ addBtn.addEventListener("click", function() {
         return;
       }
     });
+
+    var myCard = deleteItem.parentElement.parentElement;
+    myCard.addEventListener("dblclick", e => {
+      e.preventDefault();
+      myTextField = deleteItem.parentElement.parentElement.children[0].children[0].style.textDecoration =
+        "line-through";
+      console.log(myTextField);
+    });
+
+    myCard.addEventListener("click", e => {
+      e.preventDefault();
+      myTextField = deleteItem.parentElement.parentElement.children[0].children[0].style.textDecoration =
+        "none";
+      console.log(myTextField);
+    });
   } else {
     return;
   }
