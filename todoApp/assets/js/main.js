@@ -99,7 +99,7 @@ addBtn.addEventListener("click", function() {
       }
     });
 
-    var myCard = deleteItem.parentElement.parentElement;
+    let myCard = deleteItem.parentElement.parentElement;
     myCard.addEventListener("dblclick", e => {
       e.preventDefault();
       myTextField = deleteItem.parentElement.parentElement.children[0].children[0].style.textDecoration =
