@@ -59,7 +59,6 @@ addBtn.addEventListener("click", function() {
     const details = document.createElement("div");
     const myPara = document.createElement("p");
     const checkbox = document.createElement("input");
-
     const deleteBtn_wrapper = document.createElement("div");
     const deleteBtn = document.createElement("i");
 
