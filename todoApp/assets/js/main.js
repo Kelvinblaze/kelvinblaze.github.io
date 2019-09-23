@@ -48,6 +48,7 @@ document.getElementById("today-date").innerHTML = fullDate;
 
 var i = 0;
 var j = 0;
+var k = 0;
 // Add New Card
 var addBtn = document.getElementById("add");
 addBtn.addEventListener("click", function() {
@@ -57,6 +58,7 @@ addBtn.addEventListener("click", function() {
     const card = document.createElement("div");
     const details = document.createElement("div");
     const myPara = document.createElement("p");
+    const checkbox = document.createElement("input");
 
     const deleteBtn_wrapper = document.createElement("div");
     const deleteBtn = document.createElement("i");
@@ -76,12 +78,18 @@ addBtn.addEventListener("click", function() {
     // myPara.setAttribute("id", "text-field");
     myPara.textContent = para;
 
+    // Checkbox attributes and classes
+    checkId = `check${k++}`;
+    checkbox.setAttribute("type", "checkbox");
+    checkbox.setAttribute("id", checkId);
+
     // Create Delete Btn
     deleteBtn_wrapper.classList.add("delBtn");
     deleteBtn.classList.add("fa", "fa-times-circle");
     deleteId = `delete${j++}`;
     deleteBtn.setAttribute("id", deleteId);
 
+    details.append(checkbox);
     details.append(myPara);
     deleteBtn_wrapper.append(deleteBtn);
     card.append(details, deleteBtn_wrapper);
@@ -99,19 +107,13 @@ addBtn.addEventListener("click", function() {
       }
     });
 
-    let myCard = deleteItem.parentElement.parentElement;
-    myCard.addEventListener("dblclick", e => {
-      e.preventDefault();
-      myTextField = deleteItem.parentElement.parentElement.children[0].children[0].style.textDecoration =
-        "line-through";
-      console.log(myTextField);
-    });
+    let checkitem =
+      deleteItem.parentElement.parentElement.children[0].children[0];
 
-    myCard.addEventListener("click", e => {
-      e.preventDefault();
-      myTextField = deleteItem.parentElement.parentElement.children[0].children[0].style.textDecoration =
-        "none";
-      console.log(myTextField);
+    checkitem.addEventListener("click", e => {
+      let checkPara =
+        deleteItem.parentElement.parentElement.children[0].children[1];
+      checkPara.classList.toggle("linethrough");
     });
   } else {
     return;
