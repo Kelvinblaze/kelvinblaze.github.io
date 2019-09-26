@@ -61,7 +61,6 @@ addBtn.addEventListener("click", function() {
     const checkbox = document.createElement("input");
     const deleteBtn_wrapper = document.createElement("div");
     const deleteBtn = document.createElement("i");
-
     // Class attributes and classes
     card.classList.add("card");
     cardId = `card${i++}`;
