@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Gothic+A1:300,400,500,600,700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,11 +12,69 @@ body {
 }
 
 .body-wrapper {
-  padding: 2rem 2rem 5rem 2rem;
+  padding: 2rem 10rem 5rem 2rem;
+}
+
+@media (max-width: 768px) {
+  .body-wrapper {
+    padding: 2rem 2rem 5rem 2rem;
+  }
+}
+
+.role-wrapper {
+  display: flex;
+  margin: 2em 0;
+}
+
+.role-img {
+  width: 50px;
+  margin-right: 2em;
+}
+
+.role-img img {
+  max-width: 100%;
 }
 
 hr.line-break {
   border: 2px solid #000000;
+  margin-bottom: 20px;
+}
+
+hr.line-break-small {
+  border: 0.5px dashed #00000023;
+  margin: 20px 0;
+}
+
+.header-text {
+  padding: 1em;
+  text-align: center;
+}
+
+.header-text h1,
+.header-text h2,
+.header-text p {
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.header-text p a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .header-text {
+    padding: 5em;
+    text-align: center;
+  }
+
+  .header-text h1,
+  .header-text h2,
+  .header-text p {
+    width: 60%;
+    margin-top: 1rem;
+    margin: auto;
+  }
 }
 
 p {
@@ -30,40 +89,43 @@ p {
 
 .mobile-list {
   -webkit-animation: mynavbar 0.2s linear;
-          animation: mynavbar 0.2s linear;
+  animation: mynavbar 0.2s linear;
 }
 
 @-webkit-keyframes mynavbar {
   from {
     -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    transform: scale(0.5);
   }
+
   to {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes mynavbar {
   from {
     -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    transform: scale(0.5);
   }
+
   to {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 .modal-animation {
   -webkit-animation: modalanim 0.2s linear;
-          animation: modalanim 0.2s linear;
+  animation: modalanim 0.2s linear;
 }
 
 @-webkit-keyframes modalanim {
   from {
     opacity: 0.1;
   }
+
   to {
     opacity: 1;
   }
@@ -73,6 +135,7 @@ p {
   from {
     opacity: 0.1;
   }
+
   to {
     opacity: 1;
   }
@@ -92,14 +155,16 @@ p {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 50%;
   height: auto;
   border: none;
   border-radius: 4px;
   display: none;
   -webkit-box-shadow: 0 0 5px 0;
-          box-shadow: 0 0 5px 0;
+  box-shadow: 0 0 5px 0;
+  /* border: 1px solid red; */
+  z-index: 100000;
 }
 
 @media (max-width: 800px) {
@@ -115,11 +180,11 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 1rem;
 }
 
@@ -161,8 +226,8 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   margin-top: 1rem;
 }
 
@@ -174,22 +239,22 @@ p {
 }
 
 header .navbar ul {
-  position: fixed;
-  top: 0;
-  width: 100%;
+  /* position: fixed; */
+  /* top: 0;
+  width: 100%; */
   background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   padding: 1em 0;
   -webkit-box-shadow: 0px 0.5px 3px 0.1px grey;
-          box-shadow: 0px 0.5px 3px 0.1px grey;
+  box-shadow: 0px 0.5px 3px 0.1px grey;
 }
 
 header .navbar ul li {
@@ -226,19 +291,22 @@ header .mobile-navbar {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
+
   header .mobile-navbar .nav-icon {
     font-size: 32px;
     cursor: pointer;
   }
+
   header .mobile-navbar .hide {
     display: none;
   }
+
   header .mobile-navbar ul {
     position: absolute;
     background: white;
@@ -251,33 +319,39 @@ header .mobile-navbar {
     list-style: none;
     font-weight: bolder;
     -webkit-box-shadow: 0 1px 0px 1px grey;
-            box-shadow: 0 1px 0px 1px grey;
+    box-shadow: 0 1px 0px 1px grey;
   }
+
   header .mobile-navbar ul li {
     margin: 1rem 0;
   }
+
   header .mobile-navbar ul li a {
     text-decoration: none;
     color: black;
   }
+
   header .mobile-navbar ul li a:hover {
     color: #f25c2f;
   }
 }
 
 header .header-bg-image {
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   line-height: 3rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000000a7)), url("../images/header-bg-image.png");
-  background: linear-gradient(to bottom, #000000a7), url("../images/header-bg-image.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000a7)), url("../images/gallery/Rectangle7.jpg");
+  background: linear-gradient(to bottom, #000000a7), url("../images/gallery/Rectangle7.jpg");
   width: 100%;
-  height: 60vh;
+  vertical-align: middle;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 80vh;
   text-align: center;
   display: -ms-grid;
   display: grid;
   place-content: center;
   color: white;
-  background-size: cover;
 }
 
 @media (max-width: 768px) {
@@ -299,6 +373,7 @@ header .header-bg-image .header-cta-btn button {
   margin: 1rem 0;
   border: 3px solid white;
   font-weight: 700;
+  border-radius: 4px;
 }
 
 header .header-bg-image .header-cta-btn button:hover {
@@ -325,11 +400,11 @@ main .first-section .about-us {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 main .first-section .about-us .icon {
@@ -359,6 +434,13 @@ main .first-section .about-us .about-info {
 main .first-section .about-us .about-info h1,
 main .first-section .about-us .about-info p {
   margin: 1rem 0;
+  line-height: 1.6em;
+}
+
+main .first-section .about-us .about-info p a {
+  font-weight: bold;
+  color: black;
+
 }
 
 @media (max-width: 768px) {
@@ -381,11 +463,11 @@ main .second-section .sponsors {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 main .second-section .sponsors .icon {
@@ -416,6 +498,23 @@ main .second-section .sponsors .sponsors-header h1,
 main .second-section .sponsors .sponsors-header p {
   margin: 1rem 0;
 }
+
+.sponsors-logo-holder {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sponsor-logo {
+  width: 120px;
+  margin: 0 10px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.205);
+}
+
+.sponsor-logo img {
+  max-width: 100%;
+}
+
 
 main .third-section {
   margin-top: 2rem;
@@ -503,7 +602,7 @@ main .fourth-section .gallery .gallery-info {
 }
 
 main .fourth-section .gallery .gallery-info h1,
-main .fourth-section .gallery .gallery-info .gallery-image {
+main .fourth-section .gallery .gallery-info .s {
   margin: 1rem 0;
 }
 
@@ -523,8 +622,8 @@ main .fourth-section .gallery .gallery-info .gallery-image .button-wrapper {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 main .fourth-section .gallery .gallery-info h1 .button-wrapper button,
@@ -556,11 +655,11 @@ footer .footer-content .row {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -622,8 +721,8 @@ footer .footer-content .row .social-links {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 80%;
 }
 
@@ -637,49 +736,22 @@ footer .footer-content .row .social-links a:hover {
 
 @media (max-width: 768px) {
   footer .footer-content .row .social-links {
-    width: 50%;
+    width: 60%;
     margin: auto;
   }
 }
 
-.gallery-images {
-  width: 100%;
-  margin: auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -webkit-column-gap: 1em;
-          column-gap: 1em;
-  row-gap: 1em;
-}
 
-@media (max-width: 768px) {
-  .gallery-images {
-    width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .gallery-images {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-.gallery-images img {
-  max-width: 100%;
-}
-
-.past-gallery h1, .past-gallery p {
+.past-gallery h1,
+.past-gallery p {
   margin: 1rem 0;
 }
 
 .winners-image {
   margin-top: 5rem;
   line-height: 3rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000000a7)), url("../images/gallery/Rectangle 6.png");
-  background: linear-gradient(to bottom, #000000a7), url("../images/gallery/Rectangle 6.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000a7)), url("../images/gallery/Rectangle7.jpg");
+  background: linear-gradient(to bottom, #000000a7), url("../images/gallery/Rectangle7.jpg");
   width: 100%;
   height: 60vh;
   text-align: center;
@@ -747,16 +819,16 @@ footer .footer-content .row .social-links a:hover {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   -webkit-column-gap: 1em;
-          column-gap: 1em;
+  column-gap: 1em;
   row-gap: 1em;
 }
 
 @media (max-width: 768px) {
   .past-debate .past-debate-images {
     -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -767,8 +839,8 @@ footer .footer-content .row .social-links a:hover {
 .upcoming-image {
   margin-top: 5rem;
   line-height: 3rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000000a7)), url("../images/gallery/Rectangle 6.png");
-  background: linear-gradient(to bottom, #000000a7), url("../images/gallery/Rectangle 6.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000a7)), url("../images/gallery/Rectangle8.jpg");
+  background: linear-gradient(to bottom, #000000a7), url("../images/gallery/Rectangle8.jpg");
   width: 100%;
   height: 60vh;
   text-align: center;
@@ -778,6 +850,8 @@ footer .footer-content .row .social-links a:hover {
   color: white;
   background-size: cover;
 }
+
+
 
 .upcoming-image h1 {
   width: 70%;
@@ -805,4 +879,55 @@ footer .footer-content .row .social-links a:hover {
 .upcoming-Info p {
   margin-top: 2rem;
 }
+
+.prize-award li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.cta-email {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cta-email:hover {
+  color: #f25c2f;
+}
+
+
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.gallery-column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.gallery-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .gallery-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .gallery-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

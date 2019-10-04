@@ -8,6 +8,9 @@
     <title>HOME | LASU DEBATE</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Animate scroll css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,7 +20,7 @@
         <!-- DESKTOP NAVIGATION -->
         <nav class="navbar">
             <ul>
-                <li><a href="past-winners.html">WINNERS 2017</a></li>
+                <li><a href="past-winners.html">WINNERS 2018</a></li>
                 <li><a href="past-debate.html">PAST EVENTS</a></li>
                 <li><a href="index.html"><img src="assets/images/logo.png" alt="HOME"></a></li>
                 <li><a href="gallery.html">GALLERY</a></li>
@@ -35,7 +38,7 @@
             </div>
 
             <ul class="mobile-list hide">
-                <li><a href="past-winners.html">WINNERS 2017</a></li>
+                <li><a href="past-winners.html">WINNERS 2018</a></li>
                 <li><a href="past-debate.html">PAST EVENTS</a></li>
                 <li><a href="gallery.html">GALLERY</a></li>
                 <li><a href="upcoming-debates.html">UPCOMING DEBATES</a></li>
@@ -52,29 +55,29 @@
                 <div class="form">
                     <div class="form-group">
                         <label for="Fullname">Participant's Name</label> <br>
-                        <input type="text" placeholder="Please enter your fullname" required>
+                        <input type="text" placeholder="Ifeanyi Kelvin Ossai" required>
                     </div>
                     <div class="form-group">
                         <label for="university">University's Name</label> <br>
-                        <input type="text" placeholder="Please enter your university's name" required>
+                        <input type="text" placeholder="Lagos State University" required>
                     </div>
                     <div class="form-group">
                         <label for="Fullname">University's Address</label> <br>
-                        <input type="text" placeholder="Please enter the address of your university" required>
+                        <input type="text" placeholder="LASU, Main Campus, Ojo, Lagos" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Participant's Email Address</label> <br>
-                        <input type="email" placeholder="Please enter your email address" required>
+                        <input type="email" placeholder="mail@gmail.com" required>
                     </div>
 
                     <div class="form-group">
                         <label for="Fullname">Participant's Mobile Number</label> <br>
-                        <input type="tel" placeholder="Please enter your mobile number" required>
+                        <input type="tel" placeholder="08101234567" required>
                     </div>
                 </div>
 
                 <div class="form-footer">
-                    
+
                     <div class="submit-btn">
                         <input type="submit">
                     </div>
@@ -83,11 +86,12 @@
         </div>
 
         <div class="header-bg-image">
-            <div class="header-text" style="padding: 1.5rem">
-                <h1>WE DON'T ARGUE WE BREAK FACADES <br>THAT BLINDS OUR REASONING</h1>
+            <div class="header-text" data-aos="flip-up">
+                <h1>LIVDC 3.0</h1>
+                <h2>NATIONAL PATRIOTISM: A CATALYST FOR NIGERIA'S ADVANCEMENT TO A DEVELOPED STATE</h2>
             </div>
-            <hr class="header-bg-break">
-            <div class="header-cta-btn">
+            <!-- <hr class="header-bg-break"> -->
+            <div class="header-cta-btn" data-aos="flip-down">
                 <button class="modalBtn">SIGN UP TO JOIN</button>
             </div>
         </div>
@@ -97,52 +101,118 @@
         <!-- Main content -->
         <main>
             <!-- First section -->
-            <section class="first-section">
+            <section class="first-section" data-aos="fade-right">
+                <div class="about-us">
+                    <div class="icon"><img src="./assets/images/side-icon.png" alt="Side-icon"></div>
+                    <div class="about-info">
+                        <h1>LIVDC 3.0 THEME: NATIONAL PATRIOTISM: A CATALYST FOR NIGERIA'S ADVANCEMENT TO A DEVELOPED
+                            STATE</h1>
+                        <hr class="line-break">
+                        <p>Lagos State University Students’ Union (LASUSU) Inter-Varsity Debate Competition has its
+                            emergence in 2017 and this is the Third Edition to be hosted by the Students’ Union. With
+                            the success of the first and second edition, it is proper for the continuation of the
+                            Competition. The objective is to ensure that the Competition becomes a continuous major
+                            event of the Students’ Union, and the aim is to improve the quality of education, via debate
+                            competition. <a href="upcoming-debates.html">Read More ...</a></p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="first-section" >
                 <div class="about-us">
                     <div class="icon"><img src="./assets/images/side-icon.png" alt="Side-icon"></div>
                     <div class="about-info">
                         <h1>WHO WE ARE AND WHAT WE STAND FOR</h1>
                         <hr class="line-break">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ac turpis egestas sed tempus urna Erat imperdiet sed euismod
-                            nisi
-                            porta lorem mollis aliquam. Felis eget nunc lobortis mattis aliquam faucibus purus in.
-                            Tristique
-                            nulla aliquet enim tortor at. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
-                            sunt nobis quasi modi laudantium accusantium dolorum praesentium nemo facere odit!</p>
-                        <div class="user">
-                            <div class="user-img">
-                                <img src="./assets/images/user-img.png" alt="user-image">
+                        <div class="testimonals">
+                            <!-- First User -->
+                            <div class="user" data-aos="fade-left">
+                                <p>As a world class institution, we must consistently engage in open, honest and
+                                    constructive communication in an environment of mutual respect. This competition
+                                    brings together best brains from different institutions in the country debating and
+                                    recommending solutions to National Issues. This is what we stand for at the Lagos
+                                    State University.</p>
+                                <div class="role-wrapper">
+                                    <div class="role-img">
+                                        <img src="./pictures/VC PICTURE.jpg" alt="Lasu Vc">
+                                    </div>
+                                    <div class="role">
+                                        <h4>PROFESSOR LANRE FAGBOHUN, PH.D, SAN.</h4>
+                                        <h6>VICE CHANCELLOR - LAGOS STATE UNIVERSITY, OJO.</h6>
+                                    </div>
+                                </div>
+
+
                             </div>
-                            <div class="user-role">
-                                <h5>BANKOLE WILLIAMS</h5>
-                                <p>President</p>
+                            <hr class="line-break-small">
+                            <!-- Second User -->
+                            <div class="user" data-aos="fade-right">
+                                <p>LIVDC is a program set aside by the union to provide a platform where youth’s ideas
+                                    and comments about the nation can be heard and subsequently implemented. The Lagos
+                                    State University Student Union is resolute and committed to national development-
+                                    one of such commitment is LIVDC. </p>
+                                <div class="role-wrapper">
+                                    <div class="role-img">
+                                        <img src="./pictures/VC PICTURE.jpg" alt="Lasu Vc">
+                                    </div>
+                                    <div class="role">
+                                        <h4>OLADELE, OLUWATAYO OLAWALE</h4>
+                                        <h6>LASUSU PRESIDENT</h6>
+                                    </div>
+                                </div>
+
+
                             </div>
+                            <hr class="line-break-small">
+                            <!-- Third User -->
+                            <div class="user" data-aos="fade-left">
+                                <p>Let us be clear, we cannot build the future we want and achieve the global goals for
+                                    sustainable development without the full participation of youths. LIVDC provides the
+                                    platform for the participation of youths from all parts of the country, thus
+                                    facilitating exceptional fusion of brilliant ideas from a diverse community. This is
+                                    certainly a panacea for global concerns </p>
+
+                                <div class="role-wrapper">
+                                    <div class="role-img">
+                                        <img src="./pictures/VC PICTURE.jpg" alt="Lasu Vc">
+                                    </div>
+                                    <div class="role">
+                                        <h4>ADEBIYI, KEHINDE OREOLUWA</h4>
+                                        <h6>CHAIRMAN – LIVDC 2019 ORGANIZING COMMITTEE</h6>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <hr class="line-break-small">
                         </div>
                     </div>
                 </div>
+
             </section>
 
             <!-- Second section -->
-            <section class="second-section">
+            <section class="second-section" data-aos="fade-right">
                 <div class="sponsors">
                     <div class="icon"><img src="./assets/images/side-icon.png" alt="Side-icon"></div>
                     <div class="sponsors-header">
                         <h1>OUR SPONSORS</h1>
                         <hr class="line-break">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ac turpis egestas sed tempus urna Erat imperdiet sed euismod
-                            nisi
-                            porta lorem mollis aliquam. Felis eget nunc lobortis mattis aliquam faucibus purus in.
-                            Tristique
-                            nulla aliquet enim tortor at.</p>
+                        <div class="sponsors-logo-holder">
+                            <div class="sponsor-logo"><img src="assets/images/softNexus.jpg" alt="Sponsor Image"></div>
+                            <div class="sponsor-logo"><img src="assets/images/softNexus.jpg" alt="Sponsor Image"></div>
+                            <div class="sponsor-logo"><img src="assets/images/softNexus.jpg" alt="Sponsor Image"></div>
+                            <div class="sponsor-logo"><img src="assets/images/softNexus.jpg" alt="Sponsor Image"></div>
+                            <div class="sponsor-logo"><img src="assets/images/softNexus.jpg" alt="Sponsor Image"></div>
+                        </div>
                     </div>
                 </div>
             </section>
 
 
             <!-- Third section -->
-            <section class="third-section">
+            <!-- <section class="third-section">
                 <div class="team">
                     <div class="icon"><img src="./assets/images/side-icon.png" alt="Side-icon"></div>
                     <div class="team-info">
@@ -167,10 +237,10 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!-- Fourth section -->
-            <section class="fourth-section">
+            <section class="fourth-section" data-aos="zoom-in"> 
                 <div class="gallery">
                     <div class="icon"><img src="./assets/images/side-icon.png" alt="Side-icon"></div>
                     <div class="gallery-info">
@@ -178,7 +248,7 @@
                         <hr class="line-break">
                         <div class="gallery-image">
                             <div class="image-wrapper">
-                                <img src="./assets/images/gallery/Rectangle 6.png" alt="Gallery">
+                                <img src="./assets/images/gallery/Rectangle8.jpg" alt="Gallery">
                             </div>
                             <div class="button-wrapper">
                                 <a href="gallery.html"><button>VIEW FULL GALLERY</button></a>
@@ -202,7 +272,7 @@
                 <div class="col">
                     <ul>
                         <li><a href="index.html">HOME</a></li>
-                        <li><a href="past-winners.html">WINNERS 2017</a></li>
+                        <li><a href="past-winners.html">WINNERS 2018</a></li>
                         <li><a href="past-debate.html">PAST DEBATES</a></li>
                         <li><a href="upcoming-debates.html">UPCOMING DEBATES</a></li>
                     </ul>
@@ -228,6 +298,11 @@
     </footer>
     <!-- Script -->
     <script src="assets/js/main.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
