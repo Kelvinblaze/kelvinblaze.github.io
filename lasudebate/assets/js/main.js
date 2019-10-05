@@ -49,14 +49,19 @@ function closeformModal() {
   htmlDoc.classList = "rmvbackdrop";
 }
 
-//  getting data
-db.collection("student-details")
-  .get()
-  .then(snapshot => {
-    snapshot.docs.forEach(doc => {
-      console.log(doc.data());
-    });
-  });
+ // Your web app's Firebase configuration
+ var firebaseConfig = {
+  apiKey: "AIzaSyA6-kKPd_g3E23WgSRZ-s8xAEql__ERikI",
+  authDomain: "lasudebate.firebaseapp.com",
+  databaseURL: "https://lasudebate.firebaseio.com",
+  projectId: "lasudebate",
+  storageBucket: "lasudebate.appspot.com",
+  messagingSenderId: "1032133017760",
+  appId: "1:1032133017760:web:0f3c24cf1470df47efc9c5"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
 
 // Add data to firebase
 submitBtn.onclick = e => {

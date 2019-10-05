@@ -26,7 +26,7 @@
             <ul>
                 <li><a href="past-winners.html">WINNERS 2018</a></li>
                 <li><a href="past-debate.html">PAST EVENTS</a></li>
-                <li><a href="index.html"><img src="assets/images/logo.png" alt="HOME"></a></li>
+                <li class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="HOME"></a></li>
                 <li><a href="gallery.html">GALLERY</a></li>
                 <li><a href="upcoming-debates.html">UPCOMING DEBATES</a></li>
             </ul>
@@ -59,7 +59,7 @@
                 <div class="form">
                     <div class="form-group">
                         <label for="Fullname">Participant's Name</label> <br>
-                        <input type="text" id="fullname" placeholder="Ifeanyi Kelvin Ossai" required>
+                        <input type="text" id="fullname" placeholder="e.g Ifeanyi Kelvin Ossai" required>
                     </div>
                     <div class="form-group">
                         <label for="university">University's Name</label> <br>
@@ -87,7 +87,7 @@
                 </div>
             </form>
             <div class="loader">
-            <div class="lds-spinner">
+                <div class="lds-spinner">
                     <div></div>
                     <div></div>
                     <div></div>
@@ -109,10 +109,15 @@
                 <h1>LIVDC 3.0</h1>
                 <h2>NATIONAL PATRIOTISM: A CATALYST FOR NIGERIA'S ADVANCEMENT TO A DEVELOPED STATE</h2>
             </div>
-            <!-- <hr class="header-bg-break"> -->
-            <div class="header-cta-btn" data-aos="flip-down">
-                <button class="modalBtn">SIGN UP TO JOIN</button>
+            <div class="action-buttons">
+                <div class="header-cta-btn" data-aos="flip-down">
+                    <button class="modalBtn">JOIN AS A PARTICIPANT</button>
+                </div>
+                <div class="header-cta-btn" data-aos="flip-down">
+                    <button class="modalBtn">REGISTER TO ATTEND</button>
+                </div>
             </div>
+
         </div>
     </header>
 
@@ -173,7 +178,7 @@
                                     one of such commitment is LIVDC. </p>
                                 <div class="role-wrapper">
                                     <div class="role-img">
-                                        <img src="./pictures/VC PICTURE.jpg" alt="Lasu Vc">
+                                        <img src="./pictures/PRESIDENT PIC.jpg" alt="PRESIDENT">
                                     </div>
                                     <div class="role">
                                         <h4>OLADELE, OLUWATAYO OLAWALE</h4>
@@ -194,7 +199,7 @@
 
                                 <div class="role-wrapper">
                                     <div class="role-img">
-                                        <img src="./pictures/VC PICTURE.jpg" alt="Lasu Vc">
+                                        <img src="./pictures/chairman picture.jpg" alt="CHAIRMAN">
                                     </div>
                                     <div class="role">
                                         <h4>ADEBIYI, KEHINDE OREOLUWA</h4>
@@ -285,7 +290,7 @@
             <div class="row">
                 <div class="col">
                     <div class="img-wrapper">
-                        <img src="./assets/images/footer-logo.png" alt="Lasu Debate Logo">
+                        <img src="./assets/images/logo.png" alt="Lasu Debate Logo">
                     </div>
                 </div>
                 <div class="col">
@@ -327,21 +332,6 @@
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
-    <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyA6-kKPd_g3E23WgSRZ-s8xAEql__ERikI",
-            authDomain: "lasudebate.firebaseapp.com",
-            databaseURL: "https://lasudebate.firebaseio.com",
-            projectId: "lasudebate",
-            storageBucket: "lasudebate.appspot.com",
-            messagingSenderId: "1032133017760",
-            appId: "1:1032133017760:web:0f3c24cf1470df47efc9c5"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        const db = firebase.firestore();
-    </script>
     <script src="assets/js/main.js"></script>
 
 </body>
