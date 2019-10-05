@@ -11,6 +11,10 @@
 
     <!-- Animate scroll css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-firestore.js"></script>
 </head>
 
 <body>
@@ -51,38 +55,53 @@
                 <i class="fa fa-times closeModal" aria-hidden="true"></i>
             </div>
 
-            <form>
+            <form id="modalform" method="post">
                 <div class="form">
                     <div class="form-group">
                         <label for="Fullname">Participant's Name</label> <br>
-                        <input type="text" placeholder="Ifeanyi Kelvin Ossai" required>
+                        <input type="text" id="fullname" placeholder="Ifeanyi Kelvin Ossai" required>
                     </div>
                     <div class="form-group">
                         <label for="university">University's Name</label> <br>
-                        <input type="text" placeholder="Lagos State University" required>
+                        <input type="text" id="uni_name" placeholder="Lagos State University" required>
                     </div>
                     <div class="form-group">
                         <label for="Fullname">University's Address</label> <br>
-                        <input type="text" placeholder="LASU, Main Campus, Ojo, Lagos" required>
+                        <input type="text" id="uni_address" placeholder="LASU, Main Campus, Ojo, Lagos" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Participant's Email Address</label> <br>
-                        <input type="email" placeholder="mail@gmail.com" required>
+                        <input type="email" id="email" placeholder="mail@gmail.com" required>
                     </div>
 
                     <div class="form-group">
                         <label for="Fullname">Participant's Mobile Number</label> <br>
-                        <input type="tel" placeholder="08101234567" required>
+                        <input type="tel" id="phone_number" placeholder="08101234567" required>
                     </div>
                 </div>
 
                 <div class="form-footer">
-
                     <div class="submit-btn">
-                        <input type="submit">
+                        <button type="submit" class="submitBtn">Register</button>
                     </div>
                 </div>
             </form>
+            <div class="loader">
+            <div class="lds-spinner">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
         </div>
 
         <div class="header-bg-image">
@@ -119,7 +138,7 @@
 
             </section>
 
-            <section class="first-section" >
+            <section class="first-section">
                 <div class="about-us">
                     <div class="icon"><img src="./assets/images/side-icon.png" alt="Side-icon"></div>
                     <div class="about-info">
@@ -240,7 +259,7 @@
             </section> -->
 
             <!-- Fourth section -->
-            <section class="fourth-section" data-aos="zoom-in"> 
+            <section class="fourth-section" data-aos="zoom-in">
                 <div class="gallery">
                     <div class="icon"><img src="./assets/images/side-icon.png" alt="Side-icon"></div>
                     <div class="gallery-info">
@@ -297,12 +316,34 @@
         </div>
     </footer>
     <!-- Script -->
-    <script src="assets/js/main.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyA6-kKPd_g3E23WgSRZ-s8xAEql__ERikI",
+            authDomain: "lasudebate.firebaseapp.com",
+            databaseURL: "https://lasudebate.firebaseio.com",
+            projectId: "lasudebate",
+            storageBucket: "lasudebate.appspot.com",
+            messagingSenderId: "1032133017760",
+            appId: "1:1032133017760:web:0f3c24cf1470df47efc9c5"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+    <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
