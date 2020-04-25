@@ -9,6 +9,7 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding: 1.5em 0;
 }
 
 .attribution a {
@@ -192,7 +193,7 @@ header .intro-container .identity-text p {
   font-size: 1em;
   line-height: 24px;
   margin: 16px 0;
-  margin-bottom: 32px;
+  margin-bottom: 3em;
   color: #9698a6;
 }
 
@@ -375,5 +376,10 @@ main .article-section .article .article-section .article-card .article-card-imag
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+footer {
+  background: #2d314d;
+  height: 200px;
 }
 /*# sourceMappingURL=style.css.map */

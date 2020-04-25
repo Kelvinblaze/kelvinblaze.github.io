@@ -22,6 +22,7 @@ $white: hsl(0, 0%, 100%);
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding: 1.5em 0;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -160,7 +161,7 @@ header {
         font-size: 1em;
         line-height: 24px;
         margin: 16px 0;
-        margin-bottom: 32px;
+        margin-bottom: 3em;
         color: $grayish-blue;
         @media (max-width: 900px) {
           text-align: center;
@@ -319,4 +320,9 @@ main {
       }
     }
   }
+}
+
+footer {
+  background: $dark-blue;
+  height: 200px;
 }
