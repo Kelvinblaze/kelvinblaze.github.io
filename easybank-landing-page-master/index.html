@@ -9,19 +9,20 @@
   <title>Frontend Mentor | Easybank landing page</title>
   <!-- External Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css" />
-  <!-- External JS Script -->
-  <script src="assets/js/main.js"></script>
 </head>
 
 <body>
   <header>
-    <!-- <img src="assets/images/bg-intro-desktop.svg" alt="bg-intro-desktop" class="intro-bg"> -->
-
     <!-- Navigation -->
     <nav>
       <div class="nav-layout">
         <div class="logo">
           <img src="assets/images/logo.svg" alt="logo" />
+        </div>
+
+        <div class="toggle-btn">
+          <img src="assets/images/icon-hamburger.svg" alt="icon-hamburger" id="openToggle">
+          <img src="assets/images/icon-close.svg" alt="icon-hamburger" id="closeToggle">
         </div>
         <div class="navbar">
           <ul>
@@ -59,6 +60,19 @@
       </section>
     </div>
   </header>
+
+     <!-- Mobile Nav -->
+     <div class="mobile-nav" id="mobileNav">
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Careers</a></li>
+        </ul>
+      </nav>
+    </div>
 
   <main>
     <section class="features-section">
@@ -252,6 +266,9 @@
       href="https://github.com/kelvinblaze">
       Ifeanyi Kelvin Ossai</a>.
   </div>
+
+   <!-- External JS Script -->
+   <script src="assets/js/main.js"></script>
 </body>
 
 </html>
