@@ -9,7 +9,7 @@
 .attribution {
   font-size: 11px;
   text-align: center;
-  padding: 1.5em 0;
+  padding: 1em 0;
 }
 
 .attribution a {
@@ -380,6 +380,81 @@ main .article-section .article .article-section .article-card .article-card-imag
 
 footer {
   background: #2d314d;
-  height: 200px;
+  height: auto;
+  font-weight: lighter;
+}
+
+footer .footer-content {
+  width: 85%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  padding: 4% 0;
+}
+
+@media (max-width: 860px) {
+  footer .footer-content {
+    display: block;
+    text-align: center;
+  }
+}
+
+footer .footer-content .footer-nav ul {
+  list-style: none;
+}
+
+footer .footer-content .footer-nav ul li {
+  padding: 8px 0;
+}
+
+footer .footer-content .footer-nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer-content .footer-nav ul li a:hover {
+  color: #31d35c;
+}
+
+@media (max-width: 860px) {
+  footer .footer-content .footer-nav {
+    padding: 3% 0;
+  }
+}
+
+footer .footer-content .request-invitation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 90px;
+}
+
+footer .footer-content .request-invitation .cta-btn a {
+  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  color: white;
+  padding: 0.8em 1.5em;
+  border-radius: 5em;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+footer .footer-content .request-invitation .reserved-rights {
+  color: #9698a6;
+}
+
+@media (max-width: 860px) {
+  footer .footer-content .request-invitation {
+    padding: 3% 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -22,7 +22,7 @@ $white: hsl(0, 0%, 100%);
 .attribution {
   font-size: 11px;
   text-align: center;
-  padding: 1.5em 0;
+  padding: 1em 0;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -324,5 +324,63 @@ main {
 
 footer {
   background: $dark-blue;
-  height: 200px;
+  height: auto;
+  font-weight: lighter;
+
+ 
+  .footer-content {
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 4% 0;
+
+    @media (max-width: 860px){
+    display: block;
+    text-align: center;
+    }
+    .footer-nav {
+      ul {
+        list-style: none;
+        li {
+          padding: 8px 0;
+          a {
+            color: $white;
+            text-decoration: none;
+
+            &:hover {
+              color: $lime-green;
+            }
+          }
+        }
+      }
+      @media (max-width: 860px){
+        padding: 3% 0;
+        }
+    }
+    .request-invitation {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 90px;
+      .cta-btn {
+        a {
+          background: linear-gradient(to right, $lime-green, $bright-cyan);
+          color: $white;
+          padding: 0.8em 1.5em;
+          border-radius: 5em;
+          text-decoration: none;
+          font-weight: 300;
+        }
+      }
+
+      .reserved-rights {
+        color: $grayish-blue;
+      }
+
+      @media (max-width: 860px){
+        padding: 3% 0;
+        }
+    }
+  }
 }
