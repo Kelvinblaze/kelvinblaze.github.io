@@ -9,6 +9,8 @@
     <link rel="shortcut icon" href="assets/images/favicons/favicon.ico" type="image/x-icon">
     <!-- External Css Link -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Typewritter Js -->
+    <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
 </head>
 
 <body>
@@ -32,11 +34,43 @@
 
     <main>
 
-        <!-- Introduction Content -->
-        <div class="intro-container">
-            <p>Hi, My Name is</p>
+        <!-- Main Content -->
+        <div class="container">
+            <div class="introduction">
+                <p class="text-accent">Hello, my name is</p>
+                <h2 class="introduction--name">Ifeanyi Kelvin Ossai.</h2>
+                <h2 id="introduction--about">ICreate • IDesign • ICode</h2>
+                <p class="introduction--details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+                    voluptate,
+                    unde fuga quo, corporis
+                    sed obcaecati fugit quis ut tempore blanditiis deleniti vitae necessitatibus! Hic expedita eaque
+                    quas corporis beatae! Rem aspernatur corporis reiciendis ipsa? Ex repudiandae fugiat eveniet
+                    laborum.</p>
+
+                <a href="" class="introduction--button">Get In Touch</a>
+            </div>
         </div>
     </main>
+
+
+    <script>
+        var text = document.getElementById('introduction--about');
+        var typewriter = new Typewriter(text, {
+            loop: true
+        });
+
+        typewriter.typeString('ICreate • IDesign • ICode')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('I love to build websites')
+            .pauseFor(2500)
+            .deleteChars(8)
+            .typeString('<strong>web apps.</strong>')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('<strong>I am a developer!</strong>')
+            .start();
+    </script>
 </body>
 
 </html>
