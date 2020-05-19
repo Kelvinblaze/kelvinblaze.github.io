@@ -1,5 +1,5 @@
 $primary: #41308d;
-$background-primary: #16142b;
+$background-primary: #171824;
 $white: #ffffff;
 
 * {
@@ -20,14 +20,16 @@ body {
 }
 
 header {
+  width: 100%;
+  position: absolute;
+  top: 0;
   nav {
-    width: 80%;
-    margin: 2% auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: 2% auto;
+    width: 80%;
     @media (max-width: 768px) {
-      justify-content: space-between;
       width: 90%;
     }
     .logo {
@@ -90,5 +92,13 @@ header {
         transition: all 250ms ease 0s;
       }
     }
+  }
+}
+
+main {
+  //   Introduction
+  .intro-container {
+    margin: 12vh 0;
+    color: $white;
   }
 }
