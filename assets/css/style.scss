@@ -26,6 +26,10 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media (max-width: 768px) {
+      justify-content: space-between;
+      width: 90%;
+    }
     .logo {
       width: 50px;
       img {
@@ -35,12 +39,15 @@ header {
     }
 
     .nav-links {
-      width: 80%;
+      width: 60%;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       list-style: none;
       font-weight: 300;
+      @media (max-width: 768px) {
+        justify-content: flex-end;
+      }
       li {
         display: inline-block;
         a {
@@ -51,12 +58,11 @@ header {
             color: lighten($primary, $amount: 40);
           }
         }
+      }
 
-        .hide-mobile {
-          @media (max-width: 768px) {
-            display: none;
-            border: 1px solid red;
-          }
+      .hide-mobile {
+        @media (max-width: 768px) {
+          display: none !important;
         }
       }
 
@@ -71,10 +77,10 @@ header {
         justify-content: center;
         line-height: 1.2;
         min-width: 2.5rem;
-        padding-bottom: 1.5rem;
+        padding-bottom: 1.2rem;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
-        padding-top: 1.5rem;
+        padding-top: 1.2rem;
         position: relative;
         user-select: none;
         vertical-align: middle;
