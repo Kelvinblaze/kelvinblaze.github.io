@@ -20,6 +20,11 @@ body {
   color: #b2a8e1;
 }
 
+.spacer {
+  margin: 2rem 0;
+  height: 2px;
+}
+
 header {
   width: 100%;
   position: absolute;
@@ -168,13 +173,13 @@ main .container .introduction h2 {
 
 main .container .introduction--details {
   color: #a0aec0;
-  width: 60%;
+  width: 50%;
   line-height: 2;
 }
 
 @media (max-width: 900px) {
   main .container .introduction--details {
-    width: 70%;
+    width: 80%;
   }
 }
 
