@@ -27,9 +27,10 @@ body {
 
 header {
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   background: #171824;
+  z-index: 99999;
 }
 
 header nav {
@@ -216,5 +217,41 @@ main .container .introduction--button {
 main .container .introduction--button:hover {
   background: #b2a8e1;
   color: #ffffff;
+}
+
+main .container .about {
+  margin: 20rem 0;
+}
+
+main .container .about--header {
+  margin: 4rem 0;
+}
+
+main .container .about--header h2 {
+  font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+  main .container .about--header h2 {
+    font-size: 2.5rem;
+  }
+}
+
+main .container .about--content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+@media (max-width: 900px) {
+  main .container .about--content {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+main .container .about--content p {
+  margin: 2.5rem 0;
 }
 /*# sourceMappingURL=style.css.map */

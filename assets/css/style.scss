@@ -33,9 +33,10 @@ body {
 }
 header {
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   background: $background-primary;
+  z-index: 99999;
   nav {
     display: flex;
     justify-content: space-between;
@@ -177,6 +178,32 @@ main {
         &:hover {
           background: $primary-40;
           color: $white;
+        }
+      }
+    }
+
+    .about {
+      margin: 20rem 0;
+
+      &--header {
+        margin: 4rem 0;
+        h2 {
+          font-size: 3rem;
+          @media (max-width: 768px) {
+            font-size: 2.5rem;
+          }
+        }
+      }
+
+      &--content {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        @media (max-width: 900px) {
+          grid-template-columns: 100%;
+        }
+        p {
+          margin: 2.5rem 0;
         }
       }
     }
