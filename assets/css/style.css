@@ -256,4 +256,22 @@ main .container .about--content p {
   color: #a0aec0;
   line-height: 2;
 }
+
+main .container .about--content .technologies {
+  color: #a0aec0;
+  margin-left: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  main .container .about--content .technologies {
+    width: 70%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

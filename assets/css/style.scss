@@ -207,6 +207,17 @@ main {
           color: $grey;
           line-height: 2;
         }
+        .technologies {
+          color: $grey;
+          margin-left: 1.5rem;
+          display: flex;
+          justify-content: space-between;
+          width: 50%;
+
+          @media (max-width: 768px) {
+            width: 70%;
+          }
+        }
       }
     }
   }
