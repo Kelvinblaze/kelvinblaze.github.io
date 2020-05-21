@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +13,7 @@ html {
 }
 
 body {
-  background: #171824;
+  background: #130F23;
   font-size: 1.4rem;
   font-family: "Roboto", sans-serif;
 }
@@ -30,7 +31,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  background: #171824;
+  background: #130F23;
   z-index: 99999;
 }
 
@@ -232,6 +233,10 @@ main .container .about--header h2 {
   font-size: 3rem;
 }
 
+main .container .about--header h2 span {
+  font-family: "Fira Code", monospace;
+}
+
 @media (max-width: 768px) {
   main .container .about--header h2 {
     font-size: 2.5rem;
@@ -299,5 +304,27 @@ main .container .about--content .avatar img {
   -webkit-filter: grayscale(100);
           filter: grayscale(100);
   border-radius: 0.25rem;
+}
+
+main .container .projects {
+  margin: 20rem 0;
+}
+
+main .container .projects--header {
+  margin: 4rem 0;
+}
+
+main .container .projects--header h2 {
+  font-size: 3rem;
+}
+
+main .container .projects--header h2 span {
+  font-family: "Fira Code", monospace;
+}
+
+@media (max-width: 768px) {
+  main .container .projects--header h2 {
+    font-size: 2.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
