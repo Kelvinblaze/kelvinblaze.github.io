@@ -266,7 +266,11 @@ main .container .about--content .technologies {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 50%;
+  width: 60%;
+}
+
+main .container .about--content .technologies ul li {
+  line-height: 2;
 }
 
 @media (max-width: 768px) {
