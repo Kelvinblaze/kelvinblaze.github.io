@@ -328,6 +328,10 @@ main .container .projects__header h2 span {
   }
 }
 
+main .container .projects .all-projects > div {
+  margin: 2rem 0;
+}
+
 main .container .projects__card {
   width: 100%;
   height: auto;
