@@ -4,8 +4,8 @@ let projects = [
     description:
       "Covidngg is web-based statistic counter or tracker. It helps you stay updated with the latest statistics of all confirmed, deceased, active and recovered cases of corona virus patients in Nigeria.",
     technologies: ["VUE", "CHAKRA UI", "REST API"],
-    github: "",
-    preview: "",
+    github: "https://github.com/Kelvinblaze/covidng",
+    preview: "https://covidngg.herokuapp.com/",
     image: "",
   },
   {
@@ -13,35 +13,35 @@ let projects = [
     description:
       "A simple web based site and PWA that shows important details of all countries of the world.",
     technologies: ["VUE", "REST API", ""],
-    github: "",
-    preview: "",
+    github: "https://github.com/Kelvinblaze/where-in-the-world",
+    preview: "https://widw.herokuapp.com/",
     image: "",
   },
   {
     name: "Frontend Mentors Challenges",
     description:
-      "A simple web based site and PWA that shows important details of all countries of the world.",
+      "All of my submissions for the Frontend Mentor Challenges, Includes a list of landing page i have worked on.",
     technologies: ["HTML", "SCSS", "JAVASCRIPT"],
-    github: "",
-    preview: "",
+    github: "https://github.com/Kelvinblaze/frontend-mentor-challenges",
+    preview: "https://bit.ly/3fBXgVs",
     image: "",
   },
   {
     name: "Neumorphism Calculator",
     description:
-      "A simple web based site and PWA that shows important details of all countries of the world.",
+      "This is a fully functional and responsive Calculator built with VanillaJS in Neumorphism Design",
     technologies: ["HTML", "CSS", "JAVASCRIPT"],
-    github: "",
-    preview: "",
+    github: "https://github.com/Kelvinblaze/Neumorphism-Calculator-JavaScript",
+    preview: "https://kelvinblaze.github.io/Neumorphism-Calculator/",
     image: "",
   },
   {
     name: "Tiwa Africa",
     description:
-      "A simple web based site and PWA that shows important details of all countries of the world.",
+      "Tiwa Africa is a platform that gives African fashion designers the opportunity to showcase their beautiful product, have engagement and also sell them.",
     technologies: ["VUE", "NUXT", "VUETIFY"],
-    github: "",
-    preview: "",
+    github: "https://softnexus.co",
+    preview: "https://tiwa.africa",
     image: "",
   },
 ];
