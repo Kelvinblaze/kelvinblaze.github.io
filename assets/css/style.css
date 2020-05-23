@@ -444,7 +444,8 @@ main .container .contact__details .social-links {
 
 @media (max-width: 768px) {
   main .container .contact__details .social-links {
-    margin: 6rem auto;
+    margin: auto;
+    margin-top: 100px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
