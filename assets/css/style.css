@@ -411,4 +411,50 @@ main .container .contact__header h2 span {
     font-size: 2.5rem;
   }
 }
+
+main .container .contact__details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  main .container .contact__details {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+main .container .contact__details .mail-link {
+  color: #a0aec0;
+}
+
+main .container .contact__details .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  main .container .contact__details .social-links {
+    margin: 6rem auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 80%;
+  }
+}
+
+main .container .contact__details .social-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 4rem;
+}
 /*# sourceMappingURL=style.css.map */

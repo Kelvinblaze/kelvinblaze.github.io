@@ -339,6 +339,36 @@ main {
           }
         }
       }
+
+      &__details {
+          display: grid;
+          grid-template-columns: 50% 50%;
+          align-items: center;
+
+          @media (max-width: 768px) {
+            grid-template-columns: 100%;
+          }
+
+          .mail-link {
+              color: $grey;
+          }
+          .social-links {
+
+            display: flex;
+            justify-content: space-evenly;
+
+            @media (max-width: 768px) {
+                margin: 6rem auto;
+                justify-content: space-between;
+                width: 80%;
+              }
+              a {
+                  text-decoration: none;
+                  color: $white;
+                  font-size: 4rem;
+              }
+          }
+      }
     }
   }
 }
