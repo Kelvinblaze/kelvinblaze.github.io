@@ -45,7 +45,6 @@
     </header>
 
     <main>
-
         <!-- Main Content -->
         <div class="container">
             <div class="introduction">
@@ -56,7 +55,7 @@
                     do. I’m a very meticulous and fun-loving software engineer who has a flair for UI design. I love to
                     write easy to understand and maintainable code.</p>
                 <div class="spacer"></div>
-                <a href="mailto:ifeanyiko4u@gmail.com" class="introduction--button" data-micron="bounce">Get In
+                <a href="mailto:ifeanyiko4u@gmail.com" data-micron="bounce" class="introduction--button">Get In
                     Touch</a>
             </div>
 
@@ -140,10 +139,6 @@
             </div>
         </div>
     </main>
-
-    <script>
-        micron.getEle(".introduction--button").interaction("bounce").duration("45").timing("ease-out");
-    </script>
     <script>
         var text = document.getElementById('introduction--about');
         var typewriter = new Typewriter(text, {

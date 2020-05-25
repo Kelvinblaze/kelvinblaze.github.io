@@ -26,6 +26,7 @@ body {
 }
 
 // Utilities
+
 .text-accent {
   color: $primary-40;
 }
@@ -162,20 +163,13 @@ main {
         color: $primary-40;
         text-decoration: none;
         border: 2px solid $primary-40;
-        -webkit-box-align: center;
-        -webkit-appearance: none;
         font-weight: 600;
         height: 3rem;
-        -webkit-box-pack: center;
         line-height: 1.2;
         min-width: 2.5rem;
         padding: 1.5rem 2rem;
-        user-select: none;
-        vertical-align: middle;
-        white-space: nowrap;
         border-radius: 0.25rem;
         outline: none;
-        transition: all 250ms ease 0s;
 
         &:hover {
           background: $primary-40;

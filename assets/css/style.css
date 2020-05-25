@@ -196,24 +196,13 @@ main .container .introduction--button {
   color: #b2a8e1;
   text-decoration: none;
   border: 2px solid #b2a8e1;
-  -webkit-box-align: center;
-  -webkit-appearance: none;
   font-weight: 600;
   height: 3rem;
-  -webkit-box-pack: center;
   line-height: 1.2;
   min-width: 2.5rem;
   padding: 1.5rem 2rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
   border-radius: 0.25rem;
   outline: none;
-  -webkit-transition: all 250ms ease 0s;
-  transition: all 250ms ease 0s;
 }
 
 main .container .introduction--button:hover {
