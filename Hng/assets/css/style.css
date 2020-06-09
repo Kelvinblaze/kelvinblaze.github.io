@@ -242,13 +242,30 @@ a {
     font-weight: 300;
 }
 
+.booking-form .form-group input,
+.booking-form .form-group select {
+    width: 100%;
+    padding: 1rem;
+    border: 0.5px solid #E5E5E5;
+    background: #412a1e;
+    color: white;
+    border-radius: none;
+}
+
+.booking-form .form-group select {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.booking-form .form-group .book-btn {
+    background: #e6b922;
+    border: none;
+}
+
 
 /* MAIN BODY STYLINGS */
-.main__body__content {}
 
 /* ABOUT CONTENT */
-.about {}
-
 .about__header,
 .about__paragraph,
 .about__action-btn {
@@ -552,7 +569,8 @@ a {
     }
 
     .navbar__menu__container {
-        position: fixed;
+        position: absolute;
+        z-index: 999999;
         height: 100vh;
         width: 100%;
         background: #e6b922;
@@ -562,7 +580,6 @@ a {
         padding: 80px 0;
         line-height: normal;
         transition: 0.7s;
-        z-index: 9998;
     }
 
     .navbar__menu__container .navbar-link {
@@ -691,6 +708,11 @@ a {
 
 @media screen and (max-width: 750px) {
 
+    .booking__header-text {
+        text-align: center;
+        padding: 1rem 0;
+    }
+
     .about__header {
         line-height: 1.2;
     }
@@ -698,7 +720,8 @@ a {
     .about__header,
     .about__paragraph,
     .about__action-btn {
-        width: 100%;
+        width: 90%;
+        margin: 3rem auto;
         text-align: center;
     }
 
