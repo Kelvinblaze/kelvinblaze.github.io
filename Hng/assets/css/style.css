@@ -23,6 +23,22 @@ h2 {
     font-size: 4rem;
 }
 
+h3 {
+    font-size: 2rem;
+}
+
+.peach {
+    background: #E38383;
+}
+
+.gold {
+    background: #E3B783;
+}
+
+.blue {
+    background: #82AFE3;
+}
+
 /* BUTTONS */
 a {
     text-decoration: none;
@@ -331,44 +347,57 @@ a {
 /* Event Card */
 .event-card {
     height: 400px;
+
 }
 
 .event-card-img {
     height: 400px;
     background: grey;
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    color: white;
+}
 
+
+.event-content .event-category {
+    padding: 0.8rem;
+    width: 45%;
+    font-family: Poppins;
+    text-align: center;
 }
 
 /* EVENT IMAGES */
 .event-img-one {
-    background: url("../img/event-img-1.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/event-img-1.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .event-img-two {
-    background: url("../img/event-img-2.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/event-img-2.png");
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
 .event-img-three {
-    background: url("../img/event-img-3.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/event-img-3.png");
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
 .event-img-four {
-    background: url("../img/event-img-4.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/event-img-4.png");
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
 .event-img-five {
-    background: url("../img/event-img-5.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/event-img-5.png");
     background-repeat: no-repeat;
     background-size: cover;
 
