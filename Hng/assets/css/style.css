@@ -244,6 +244,7 @@ a {
 
 .booking-form .form-group input,
 .booking-form .form-group select {
+    -webkit-appearance: none;
     width: 100%;
     padding: 1rem;
     border: 0.5px solid #E5E5E5;
