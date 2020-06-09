@@ -549,6 +549,9 @@ a {
     h2 {
         font-size: 3rem;
     }
+    .lil-margin {
+        margin-bottom: 1rem;
+    }
 
     .intro-wrapper {
         width: 95%;
