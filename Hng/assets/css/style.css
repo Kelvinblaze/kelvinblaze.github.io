@@ -311,8 +311,6 @@ a {
 
 /* BLOG AND EVENT */
 
-.blog {}
-
 .blog__subtitle,
 .blog__title {
     text-align: center;
@@ -333,7 +331,47 @@ a {
 /* Event Card */
 .event-card {
     height: 400px;
-    border: 1px solid #412a1e;
+}
+
+.event-card-img {
+    height: 400px;
+    background: grey;
+
+}
+
+/* EVENT IMAGES */
+.event-img-one {
+    background: url("../img/event-img-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.event-img-two {
+    background: url("../img/event-img-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.event-img-three {
+    background: url("../img/event-img-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.event-img-four {
+    background: url("../img/event-img-4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.event-img-five {
+    background: url("../img/event-img-5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 
