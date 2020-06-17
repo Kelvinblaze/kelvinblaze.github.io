@@ -27,6 +27,15 @@ let projects = [
     image: "",
   },
   {
+    name: "AvianQDB",
+    description:
+      "AvianQDB is a platform built to help tackle the issue of hiring pilots and aeronautic engineers.",
+    technologies: ["VUE", "REST API", "JAVASCRIPT"],
+    github: "https://github.com/Kelvinblaze/",
+    preview: "https://avianqdb.com/",
+    image: "",
+  },
+  {
     name: "Neumorphism Calculator",
     description:
       "This is a fully functional and responsive Calculator built with VanillaJS in Neumorphism Design",
@@ -79,3 +88,9 @@ projects.forEach((project) => {
 });
 
 projectContent.appendChild(fragment);
+
+let logo = document.querySelector("#logo");
+
+logo.addEventListener("click", () => {
+    window.location.href = "https://kelvinblaze.github.io";
+})

@@ -1,0 +1,25 @@
+{
+  "name": "kelvinblaze.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelvinblaze/kelvinblaze.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kelvinblaze/kelvinblaze.github.io/issues"
+  },
+  "homepage": "https://github.com/kelvinblaze/kelvinblaze.github.io#readme",
+  "dependencies": {
+    "animejs": "^3.2.0",
+    "smooth-scrollbar": "^8.5.2"
+  }
+}
