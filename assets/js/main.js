@@ -5,7 +5,7 @@ let projects = [
       "Covidngg is web-based statistic counter or tracker. It helps you stay updated with the latest statistics of all confirmed, deceased, active and recovered cases of corona virus patients in Nigeria.",
     technologies: ["VUE", "CHAKRA UI", "REST API"],
     github: "https://github.com/Kelvinblaze/covidng",
-    preview: "https://covidngg.herokuapp.com/",
+    preview: "https://covidngg.netlify.app/",
     image: "",
   },
   {
@@ -14,7 +14,7 @@ let projects = [
       "A simple web based site and PWA that shows important details of all countries of the world.",
     technologies: ["VUE", "REST API", ""],
     github: "https://github.com/Kelvinblaze/where-in-the-world",
-    preview: "https://widw.herokuapp.com/",
+    preview: "https://widw.netlify.app/",
     image: "",
   },
   {
@@ -48,9 +48,26 @@ let projects = [
     name: "Tiwa Africa",
     description:
       "Tiwa Africa is a platform that gives African fashion designers the opportunity to showcase their beautiful product, have engagement and also sell them.",
-    technologies: ["VUE", "NUXT", "VUETIFY"],
+    technologies: ["VUE", "NUXT", "VUETIFY", "TAILWIND"],
     github: "https://softnexus.co",
     preview: "https://tiwa.africa",
+    image: "",
+  },
+  {
+    name: "Eazido",
+    description: "Eazido is simply a bot solution to help Businesses grow.",
+    technologies: ["NUXT", "TAILWIND", "FIREBASE"],
+    github: "https://softnexus.co",
+    preview: "https://app.eazido.com",
+    image: "",
+  },
+  {
+    name: "Movento",
+    description:
+      "Movento is an online platform that helps people achieve financial freedom by enabling them save responsibly and invest on the go.",
+    technologies: ["NUXT", "TAILWIND", "ESLINT"],
+    github: "https://github.com/Kelvinblaze",
+    preview: "https://movento.ltd",
     image: "",
   },
 ];
@@ -92,5 +109,5 @@ projectContent.appendChild(fragment);
 let logo = document.querySelector("#logo");
 
 logo.addEventListener("click", () => {
-    window.location.href = "https://kelvinblaze.github.io";
-})
+  window.location.href = "https://kelvinblaze.github.io";
+});
